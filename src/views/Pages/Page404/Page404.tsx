@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   Container,
   Row,
@@ -7,7 +7,7 @@ import {
   Input,
   InputGroupAddon,
   InputGroup
-} from 'reactstrap';
+} from "reactstrap";
 
 class Page404 extends React.Component {
   render() {
@@ -27,11 +27,7 @@ class Page404 extends React.Component {
                 <InputGroupAddon addonType="prepend">
                   <i className="fa fa-search" />
                 </InputGroupAddon>
-                <Input
-                  size={16}
-                  type="text"
-                  placeholder="What are you looking for?"
-                />
+                <Input size={16} type="text" placeholder="What are you looking for?" />
                 <InputGroup>
                   <Button color="info">Search</Button>
                 </InputGroup>

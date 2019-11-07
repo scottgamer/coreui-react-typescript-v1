@@ -1,11 +1,5 @@
-import * as React from 'react';
-import {
-  Badge,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Dropdown,
-} from 'reactstrap';
+import * as React from "react";
+import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Dropdown } from "reactstrap";
 
 class HeaderDropdown extends React.Component<any, any> {
   constructor(props) {
@@ -13,13 +7,13 @@ class HeaderDropdown extends React.Component<any, any> {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false,
+      dropdownOpen: false
     };
   }
 
   toggle() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen,
+      dropdownOpen: !this.state.dropdownOpen
     });
   }
 
@@ -28,7 +22,7 @@ class HeaderDropdown extends React.Component<any, any> {
       <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle nav>
           <img
-            src={'img/avatars/6.jpg'}
+            src={"img/avatars/6.jpg"}
             className="img-avatar"
             alt="admin@bootstrapmaster.com"
           />
@@ -41,17 +35,13 @@ class HeaderDropdown extends React.Component<any, any> {
             <i className="fa fa-bell-o" /> Updates<Badge color="info">42</Badge>
           </DropdownItem>
           <DropdownItem>
-            <i className="fa fa-envelope-o" /> Messages<Badge color="success">
-              42
-            </Badge>
+            <i className="fa fa-envelope-o" /> Messages<Badge color="success">42</Badge>
           </DropdownItem>
           <DropdownItem>
             <i className="fa fa-tasks" /> Tasks<Badge color="danger">42</Badge>
           </DropdownItem>
           <DropdownItem>
-            <i className="fa fa-comments" /> Comments<Badge color="warning">
-              42
-            </Badge>
+            <i className="fa fa-comments" /> Comments<Badge color="warning">42</Badge>
           </DropdownItem>
           <DropdownItem header tag="div" className="text-center">
             <strong>Settings</strong>
@@ -63,14 +53,10 @@ class HeaderDropdown extends React.Component<any, any> {
             <i className="fa fa-wrench" /> Settings
           </DropdownItem>
           <DropdownItem>
-            <i className="fa fa-usd" /> Payments<Badge color="secondary">
-              42
-            </Badge>
+            <i className="fa fa-usd" /> Payments<Badge color="secondary">42</Badge>
           </DropdownItem>
           <DropdownItem>
-            <i className="fa fa-file" /> Projects<Badge color="primary">
-              42
-            </Badge>
+            <i className="fa fa-file" /> Projects<Badge color="primary">42</Badge>
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>

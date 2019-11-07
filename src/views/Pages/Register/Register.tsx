@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   Container,
   Row,
@@ -9,8 +9,8 @@ import {
   Button,
   Input,
   InputGroup,
-  InputGroupAddon,
-} from 'reactstrap';
+  InputGroupAddon
+} from "reactstrap";
 
 class Register extends React.Component {
   render() {

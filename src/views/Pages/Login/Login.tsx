@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   Container,
   Row,
@@ -9,8 +9,8 @@ import {
   Button,
   Input,
   InputGroup,
-  InputGroupAddon,
-} from 'reactstrap';
+  InputGroupAddon
+} from "reactstrap";
 
 class Login extends React.Component {
   render() {
@@ -52,15 +52,14 @@ class Login extends React.Component {
                 </Card>
                 <Card
                   className="text-white bg-primary py-5 d-md-down-none"
-                  style={{ width: 44 + '%' }}
+                  style={{ width: 44 + "%" }}
                 >
                   <CardBody className="text-center">
                     <div>
                       <h2>Sign up</h2>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       </p>
                       <Button color="primary" className="mt-3" active>
                         Register Now!

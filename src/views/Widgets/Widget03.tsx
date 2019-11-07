@@ -1,6 +1,6 @@
-import * as React from 'react';
-import classNames from 'classnames';
-import { mapToCssModules } from 'reactstrap/lib/utils';
+import * as React from "react";
+import classNames from "classnames";
+import { mapToCssModules } from "reactstrap/lib/utils";
 
 class Widget03 extends React.Component<any, any> {
   render() {
@@ -12,18 +12,18 @@ class Widget03 extends React.Component<any, any> {
 
     if (
       !variant ||
-      ['facebook', 'twitter', 'linkedin', 'google-plus'].indexOf(variant) < 0
+      ["facebook", "twitter", "linkedin", "google-plus"].indexOf(variant) < 0
     ) {
       return null;
     }
 
-    const icon = 'fa fa-' + variant;
+    const icon = "fa fa-" + variant;
     const keys: any = Object.keys(data);
     const vals: any = Object.values(data);
 
     const classes = mapToCssModules(
-      classNames('social-box', className, variant),
-      cssModule,
+      classNames("social-box", className, variant),
+      cssModule
     );
 
     return (
