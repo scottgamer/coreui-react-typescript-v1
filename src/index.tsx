@@ -1,5 +1,7 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+
+// TODO: define BrowserRouter or HashRouter
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 // Styles
