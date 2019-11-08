@@ -12,7 +12,7 @@ import {
   InputGroupAddon
 } from "reactstrap";
 
-const Login = () => {
+const Login: React.FC = () => {
   return (
     <div className="app flex-row align-items-center">
       <Container>
