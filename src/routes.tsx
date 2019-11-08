@@ -1,3 +1,8 @@
+/**
+ * These are mocked routes
+ * Should be implemented from an API
+ */
+
 const routes = {
   "/": "Home",
   "/dashboard": "Dashboard",
