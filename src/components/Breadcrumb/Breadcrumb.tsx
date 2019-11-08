@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { Route, Link } from 'react-router-dom';
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import routes from '../../routes';
+import React from "react";
+import { Route, Link } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
+import routes from "../../routes";
 
-const findRouteName = (url) => routes[url];
+const findRouteName = url => routes[url];
 
-const getPaths = (pathname) => {
-  const paths = ['/'];
+const getPaths = pathname => {
+  const paths = ["/"];
 
-  if (pathname === '/') {
+  if (pathname === "/") {
     return paths;
   }
 
-  pathname.split('/').reduce((prev, curr, index) => {
+  pathname.split("/").reduce((prev, curr, index) => {
     const currPath = `${prev}/${curr}`;
     paths.push(currPath);
     return currPath;
@@ -27,7 +27,7 @@ const BreadcrumbsItem = ({ match, ...rest }) => {
       <BreadcrumbItem active>{routeName}</BreadcrumbItem>
     ) : (
       <BreadcrumbItem>
-        <Link to={match.url || ''}>{routeName}</Link>
+        <Link to={match.url || ""}>{routeName}</Link>
       </BreadcrumbItem>
     );
   }
@@ -42,7 +42,7 @@ const Breadcrumbs = ({ location: { pathname }, match, ...rest }) => {
   return <Breadcrumb>{items}</Breadcrumb>;
 };
 
-export default (props) => (
+export default props => (
   <div>
     <Route path="/:path" component={Breadcrumbs} {...props} />
   </div>
