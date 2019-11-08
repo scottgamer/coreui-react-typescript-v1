@@ -8,6 +8,8 @@ check the following dependencies:
 - preload-webpack-plugin
 - file-loader
 - react-dev-utils
+- eslint-config-react-app
+- babel-eslint
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
