@@ -10,19 +10,19 @@ import SidebarHeader from "./../SidebarHeader";
 import SidebarMinimizer from "./../SidebarMinimizer";
 
 const Sidebar: React.FC = props => {
-  const handleClick = e => {
+  const handleClick = (e: any) => {
     e.preventDefault();
     e.target.parentElement.classList.toggle("open");
   };
 
-  const activeRoute = (routeName, properties) => {
+  const activeRoute = (routeName: any, properties: any) => {
     return properties.location.pathname.indexOf(routeName) > -1
       ? "nav-item nav-dropdown open"
       : "nav-item nav-dropdown";
   };
 
   // badge addon to NavItem
-  const badgeAddon = badgeItem => {
+  const badgeAddon = (badgeItem: any) => {
     if (badgeItem) {
       const classes = classNames(badgeItem.class);
       return (
@@ -36,7 +36,7 @@ const Sidebar: React.FC = props => {
   };
 
   // simple wrapper for nav-title item
-  const wrapper = item => {
+  const wrapper = (item: any) => {
     return item.wrapper && item.wrapper.element
       ? React.createElement(
           item.wrapper.element,
@@ -47,7 +47,7 @@ const Sidebar: React.FC = props => {
   };
 
   // nav list section title
-  const navTitle = (title, key) => {
+  const navTitle = (title: any, key: number) => {
     const classes = classNames("nav-title", title.class);
     return (
       <li key={key} className={classes}>
@@ -56,14 +56,13 @@ const Sidebar: React.FC = props => {
     );
   };
 
-  // nav list divider
-  const navListDivider = (divider, key) => {
+  const navListDivider = (divider: any, key: number) => {
     const classes = classNames("divider", divider.class);
     return <li key={key} className={classes} />;
   };
 
   // nav item with nav link
-  const navItem = (item, key) => {
+  const navItem = (item: any, key: number) => {
     const classes = {
       item: classNames(item.class),
       link: classNames(
@@ -75,8 +74,7 @@ const Sidebar: React.FC = props => {
     return navLink(item, key, classes);
   };
 
-  // nav link
-  const navLink = (item, key, classes) => {
+  const navLink = (item: any, key: number, classes: any) => {
     const url = item.url ? item.url : "";
     return (
       <NavItem key={key} className={classes.item}>
@@ -97,8 +95,7 @@ const Sidebar: React.FC = props => {
     );
   };
 
-  // nav dropdown
-  const navDropdown = (item, key) => {
+  const navDropdown = (item: any, key: number) => {
     return (
       <li key={key} className={activeRoute(item.url, props)}>
         <a
@@ -114,27 +111,24 @@ const Sidebar: React.FC = props => {
     );
   };
 
-  // nav type
-  const navType = (item, idx) =>
+  const navType = (item: any, id: number) =>
     item.title
-      ? navTitle(item, idx)
+      ? navTitle(item, id)
       : item.divider
-      ? navListDivider(item, idx)
+      ? navListDivider(item, id)
       : item.children
-      ? navDropdown(item, idx)
-      : navItem(item, idx);
+      ? navDropdown(item, id)
+      : navItem(item, id);
 
-  // nav list
-  const navList = items => {
-    return items.map((item, index) => navType(item, index));
+  const navList = (items: any) => {
+    return items.map((item: any, index: number) => navType(item, index));
   };
 
-  const isExternal = url => {
+  const isExternal = (url: string) => {
     const link = url ? url.substring(0, 4) : "";
     return link === "http";
   };
 
-  // sidebar-nav root
   return (
     <div className="sidebar">
       <SidebarHeader />
