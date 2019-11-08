@@ -1,23 +1,24 @@
-import * as React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Badge, Nav, NavItem, NavLink as RsNavLink } from 'reactstrap';
-import classNames from 'classnames';
-import nav from './_nav';
-import SidebarFooter from './../SidebarFooter';
-import SidebarForm from './../SidebarForm';
-import SidebarHeader from './../SidebarHeader';
-import SidebarMinimizer from './../SidebarMinimizer';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Badge, Nav, NavItem, NavLink as RsNavLink } from "reactstrap";
+import classNames from "classnames";
+import nav from "./_nav";
+
+import SidebarFooter from "./../SidebarFooter";
+import SidebarForm from "./../SidebarForm";
+import SidebarHeader from "./../SidebarHeader";
+import SidebarMinimizer from "./../SidebarMinimizer";
 
 class Sidebar extends React.Component {
   handleClick(e) {
     e.preventDefault();
-    e.target.parentElement.classList.toggle('open');
+    e.target.parentElement.classList.toggle("open");
   }
 
   activeRoute(routeName, props) {
     return props.location.pathname.indexOf(routeName) > -1
-      ? 'nav-item nav-dropdown open'
-      : 'nav-item nav-dropdown';
+      ? "nav-item nav-dropdown open"
+      : "nav-item nav-dropdown";
   }
 
   render() {
@@ -26,12 +27,12 @@ class Sidebar extends React.Component {
     const handleClick = this.handleClick;
 
     // badge addon to NavItem
-    const badge = (badge) => {
-      if (badge) {
-        const classes = classNames(badge.class);
+    const badgeAddon = badgeItem => {
+      if (badgeItem) {
+        const classes = classNames(badgeItem.class);
         return (
-          <Badge className={classes} color={badge.variant}>
-            {badge.text}
+          <Badge className={classes} color={badgeItem.variant}>
+            {badgeItem.text}
           </Badge>
         );
       }
@@ -40,29 +41,29 @@ class Sidebar extends React.Component {
     };
 
     // simple wrapper for nav-title item
-    const wrapper = (item) => {
+    const wrapper = item => {
       return item.wrapper && item.wrapper.element
         ? React.createElement(
             item.wrapper.element,
             item.wrapper.attributes,
-            item.name,
+            item.name
           )
         : item.name;
     };
 
     // nav list section title
-    const title = (title, key) => {
-      const classes = classNames('nav-title', title.class);
+    const navTitle = (title, key) => {
+      const classes = classNames("nav-title", title.class);
       return (
         <li key={key} className={classes}>
-          {wrapper(title)}{' '}
+          {wrapper(title)}{" "}
         </li>
       );
     };
 
     // nav list divider
-    const divider = (divider, key) => {
-      const classes = classNames('divider', divider.class);
+    const navListDivider = (divider, key) => {
+      const classes = classNames("divider", divider.class);
       return <li key={key} className={classes} />;
     };
 
@@ -71,30 +72,30 @@ class Sidebar extends React.Component {
       const classes = {
         item: classNames(item.class),
         link: classNames(
-          'nav-link',
-          item.variant ? `nav-link-${item.variant}` : '',
+          "nav-link",
+          item.variant ? `nav-link-${item.variant}` : ""
         ),
-        icon: classNames(item.icon),
+        icon: classNames(item.icon)
       };
       return navLink(item, key, classes);
     };
 
     // nav link
     const navLink = (item, key, classes) => {
-      const url = item.url ? item.url : '';
+      const url = item.url ? item.url : "";
       return (
         <NavItem key={key} className={classes.item}>
           {isExternal(url) ? (
             <RsNavLink href={url} className={classes.link} active>
               <i className={classes.icon} />
               {item.name}
-              {badge(item.badge)}
+              {badgeAddon(item.badge)}
             </RsNavLink>
           ) : (
             <NavLink to={url} className={classes.link} activeClassName="active">
               <i className={classes.icon} />
               {item.name}
-              {badge(item.badge)}
+              {badgeAddon(item.badge)}
             </NavLink>
           )}
         </NavItem>
@@ -121,19 +122,21 @@ class Sidebar extends React.Component {
     // nav type
     const navType = (item, idx) =>
       item.title
-        ? title(item, idx)
+        ? navTitle(item, idx)
         : item.divider
-          ? divider(item, idx)
-          : item.children ? navDropdown(item, idx) : navItem(item, idx);
+        ? navListDivider(item, idx)
+        : item.children
+        ? navDropdown(item, idx)
+        : navItem(item, idx);
 
     // nav list
-    const navList = (items) => {
+    const navList = items => {
       return items.map((item, index) => navType(item, index));
     };
 
-    const isExternal = (url) => {
-      const link = url ? url.substring(0, 4) : '';
-      return link === 'http';
+    const isExternal = url => {
+      const link = url ? url.substring(0, 4) : "";
+      return link === "http";
     };
 
     // sidebar-nav root
