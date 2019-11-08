@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   Badge,
   Row,
@@ -7,9 +7,9 @@ import {
   TabPane,
   Nav,
   NavItem,
-  NavLink,
-} from 'reactstrap';
-import classnames from 'classnames';
+  NavLink
+} from "reactstrap";
+import classnames from "classnames";
 
 class Tabs extends React.Component<any, any> {
   constructor(props) {
@@ -17,14 +17,14 @@ class Tabs extends React.Component<any, any> {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1',
+      activeTab: "1"
     };
   }
 
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
-        activeTab: tab,
+        activeTab: tab
       });
     }
   }
@@ -38,10 +38,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '1',
+                    active: this.state.activeTab === "1"
                   })}
                   onClick={() => {
-                    this.toggle('1');
+                    this.toggle("1");
                   }}
                 >
                   Home
@@ -50,10 +50,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '2',
+                    active: this.state.activeTab === "2"
                   })}
                   onClick={() => {
-                    this.toggle('2');
+                    this.toggle("2");
                   }}
                 >
                   Profile
@@ -62,10 +62,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '3',
+                    active: this.state.activeTab === "3"
                   })}
                   onClick={() => {
-                    this.toggle('3');
+                    this.toggle("3");
                   }}
                 >
                   Messages
@@ -110,10 +110,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '1',
+                    active: this.state.activeTab === "1"
                   })}
                   onClick={() => {
-                    this.toggle('1');
+                    this.toggle("1");
                   }}
                 >
                   <i className="icon-calculator" />
@@ -122,10 +122,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '2',
+                    active: this.state.activeTab === "2"
                   })}
                   onClick={() => {
-                    this.toggle('2');
+                    this.toggle("2");
                   }}
                 >
                   <i className="icon-basket-loaded" />
@@ -134,10 +134,10 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '3',
+                    active: this.state.activeTab === "3"
                   })}
                   onClick={() => {
-                    this.toggle('3');
+                    this.toggle("3");
                   }}
                 >
                   <i className="icon-pie-chart" />
@@ -182,17 +182,17 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '1',
+                    active: this.state.activeTab === "1"
                   })}
                   onClick={() => {
-                    this.toggle('1');
+                    this.toggle("1");
                   }}
                 >
-                  <i className="icon-calculator" />{' '}
+                  <i className="icon-calculator" />{" "}
                   <span
-                    className={this.state.activeTab === '1' ? '' : 'd-none'}
+                    className={this.state.activeTab === "1" ? "" : "d-none"}
                   >
-                    {' '}
+                    {" "}
                     Calculator
                   </span>
                 </NavLink>
@@ -200,17 +200,17 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '2',
+                    active: this.state.activeTab === "2"
                   })}
                   onClick={() => {
-                    this.toggle('2');
+                    this.toggle("2");
                   }}
                 >
-                  <i className="icon-basket-loaded" />{' '}
+                  <i className="icon-basket-loaded" />{" "}
                   <span
-                    className={this.state.activeTab === '2' ? '' : 'd-none'}
+                    className={this.state.activeTab === "2" ? "" : "d-none"}
                   >
-                    {' '}
+                    {" "}
                     Shopping cart
                   </span>
                 </NavLink>
@@ -218,17 +218,17 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '3',
+                    active: this.state.activeTab === "3"
                   })}
                   onClick={() => {
-                    this.toggle('3');
+                    this.toggle("3");
                   }}
                 >
-                  <i className="icon-pie-chart" />{' '}
+                  <i className="icon-pie-chart" />{" "}
                   <span
-                    className={this.state.activeTab === '3' ? '' : 'd-none'}
+                    className={this.state.activeTab === "3" ? "" : "d-none"}
                   >
-                    {' '}
+                    {" "}
                     Charts
                   </span>
                 </NavLink>
@@ -272,40 +272,40 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '1',
+                    active: this.state.activeTab === "1"
                   })}
                   onClick={() => {
-                    this.toggle('1');
+                    this.toggle("1");
                   }}
                 >
-                  <i className="icon-calculator" />{' '}
+                  <i className="icon-calculator" />{" "}
                   <span
-                    className={this.state.activeTab === '1' ? '' : 'd-none'}
+                    className={this.state.activeTab === "1" ? "" : "d-none"}
                   >
-                    {' '}
-                    Calculator{' '}
+                    {" "}
+                    Calculator{" "}
                   </span>
-                  {'\u00A0'}
+                  {"\u00A0"}
                   <Badge color="success">New</Badge>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '2',
+                    active: this.state.activeTab === "2"
                   })}
                   onClick={() => {
-                    this.toggle('2');
+                    this.toggle("2");
                   }}
                 >
-                  <i className="icon-basket-loaded" />{' '}
+                  <i className="icon-basket-loaded" />{" "}
                   <span
-                    className={this.state.activeTab === '2' ? '' : 'd-none'}
+                    className={this.state.activeTab === "2" ? "" : "d-none"}
                   >
-                    {' '}
-                    Shopping cart{' '}
+                    {" "}
+                    Shopping cart{" "}
                   </span>
-                  {'\u00A0'}
+                  {"\u00A0"}
                   <Badge pill color="danger">
                     29
                   </Badge>
@@ -314,17 +314,17 @@ class Tabs extends React.Component<any, any> {
               <NavItem>
                 <NavLink
                   className={classnames({
-                    active: this.state.activeTab === '3',
+                    active: this.state.activeTab === "3"
                   })}
                   onClick={() => {
-                    this.toggle('3');
+                    this.toggle("3");
                   }}
                 >
-                  <i className="icon-pie-chart" />{' '}
+                  <i className="icon-pie-chart" />{" "}
                   <span
-                    className={this.state.activeTab === '3' ? '' : 'd-none'}
+                    className={this.state.activeTab === "3" ? "" : "d-none"}
                   >
-                    {' '}
+                    {" "}
                     Charts
                   </span>
                 </NavLink>
