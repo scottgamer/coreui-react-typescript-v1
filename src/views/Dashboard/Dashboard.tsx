@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Bar, Line } from 'react-chartjs-2';
+import React from "react";
+import { Bar, Line } from "react-chartjs-2";
 import {
   Badge,
   Row,
@@ -20,45 +20,45 @@ import {
   ButtonDropdown,
   Label,
   Input,
-  Table,
-} from 'reactstrap';
+  Table
+} from "reactstrap";
 
-const brandPrimary = '#20a8d8';
-const brandSuccess = '#4dbd74';
-const brandInfo = '#63c2de';
-const brandWarning = '#f8cb00';
-const brandDanger = '#f86c6b';
+const brandPrimary = "#20a8d8";
+const brandSuccess = "#4dbd74";
+const brandInfo = "#63c2de";
+const brandWarning = "#f8cb00";
+const brandDanger = "#f86c6b";
 
 // Card Chart 1
 const cardChartData1 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: 'My First dataset',
+      label: "My First dataset",
       backgroundColor: brandPrimary,
-      borderColor: 'rgba(255,255,255,.55)',
-      data: [65, 59, 84, 84, 51, 55, 40],
-    },
-  ],
+      borderColor: "rgba(255,255,255,.55)",
+      data: [65, 59, 84, 84, 51, 55, 40]
+    }
+  ]
 };
 
 const cardChartOpts1 = {
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
         gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent',
+          color: "transparent",
+          zeroLineColor: "transparent"
         },
         ticks: {
           fontSize: 2,
-          fontColor: 'transparent',
-        },
-      },
+          fontColor: "transparent"
+        }
+      }
     ],
     yAxes: [
       {
@@ -66,53 +66,53 @@ const cardChartOpts1 = {
         ticks: {
           display: false,
           min: Math.min.apply(Math, cardChartData1.datasets[0].data) - 5,
-          max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5,
-        },
-      },
-    ],
+          max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5
+        }
+      }
+    ]
   },
   elements: {
     line: {
-      borderWidth: 1,
+      borderWidth: 1
     },
     point: {
       radius: 4,
       hitRadius: 10,
-      hoverRadius: 4,
-    },
-  },
+      hoverRadius: 4
+    }
+  }
 };
 
 // Card Chart 2
 const cardChartData2 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: 'My First dataset',
+      label: "My First dataset",
       backgroundColor: brandInfo,
-      borderColor: 'rgba(255,255,255,.55)',
-      data: [1, 18, 9, 17, 34, 22, 11],
-    },
-  ],
+      borderColor: "rgba(255,255,255,.55)",
+      data: [1, 18, 9, 17, 34, 22, 11]
+    }
+  ]
 };
 
 const cardChartOpts2 = {
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
         gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent',
+          color: "transparent",
+          zeroLineColor: "transparent"
         },
         ticks: {
           fontSize: 2,
-          fontColor: 'transparent',
-        },
-      },
+          fontColor: "transparent"
+        }
+      }
     ],
     yAxes: [
       {
@@ -120,121 +120,121 @@ const cardChartOpts2 = {
         ticks: {
           display: false,
           min: Math.min.apply(Math, cardChartData2.datasets[0].data) - 5,
-          max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5,
-        },
-      },
-    ],
+          max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5
+        }
+      }
+    ]
   },
   elements: {
     line: {
       tension: 0.00001,
-      borderWidth: 1,
+      borderWidth: 1
     },
     point: {
       radius: 4,
       hitRadius: 10,
-      hoverRadius: 4,
-    },
-  },
+      hoverRadius: 4
+    }
+  }
 };
 
 // Card Chart 3
 const cardChartData3 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,255,255,.2)',
-      borderColor: 'rgba(255,255,255,.55)',
-      data: [78, 81, 80, 45, 34, 12, 40],
-    },
-  ],
+      label: "My First dataset",
+      backgroundColor: "rgba(255,255,255,.2)",
+      borderColor: "rgba(255,255,255,.55)",
+      data: [78, 81, 80, 45, 34, 12, 40]
+    }
+  ]
 };
 
 const cardChartOpts3 = {
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
-        display: false,
-      },
+        display: false
+      }
     ],
     yAxes: [
       {
-        display: false,
-      },
-    ],
+        display: false
+      }
+    ]
   },
   elements: {
     line: {
-      borderWidth: 2,
+      borderWidth: 2
     },
     point: {
       radius: 0,
       hitRadius: 10,
-      hoverRadius: 4,
-    },
-  },
+      hoverRadius: 4
+    }
+  }
 };
 
 // Card Chart 4
 const cardChartData4 = {
-  labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+  labels: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   datasets: [
     {
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,255,255,.3)',
-      borderColor: 'transparent',
-      data: [78, 81, 80, 45, 34, 12, 40, 75, 34, 89, 32, 68, 54, 72, 18, 98],
-    },
-  ],
+      label: "My First dataset",
+      backgroundColor: "rgba(255,255,255,.3)",
+      borderColor: "transparent",
+      data: [78, 81, 80, 45, 34, 12, 40, 75, 34, 89, 32, 68, 54, 72, 18, 98]
+    }
+  ]
 };
 
 const cardChartOpts4 = {
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
         display: false,
-        barPercentage: 0.6,
-      },
+        barPercentage: 0.6
+      }
     ],
     yAxes: [
       {
-        display: false,
-      },
-    ],
-  },
+        display: false
+      }
+    ]
+  }
 };
 
 // Social Box Chart
 const socialBoxData = [
-  { data: [65, 59, 84, 84, 51, 55, 40], label: 'facebook' },
-  { data: [1, 13, 9, 17, 34, 41, 38], label: 'twitter' },
-  { data: [78, 81, 80, 45, 34, 12, 40], label: 'linkedin' },
-  { data: [35, 23, 56, 22, 97, 23, 64], label: 'google' },
+  { data: [65, 59, 84, 84, 51, 55, 40], label: "facebook" },
+  { data: [1, 13, 9, 17, 34, 41, 38], label: "twitter" },
+  { data: [78, 81, 80, 45, 34, 12, 40], label: "linkedin" },
+  { data: [35, 23, 56, 22, 97, 23, 64], label: "google" }
 ];
 
-const makeSocialBoxData = (dataSetNo) => {
+const makeSocialBoxData = dataSetNo => {
   const dataset = socialBoxData[dataSetNo];
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
-        backgroundColor: 'rgba(255,255,255,.1)',
-        borderColor: 'rgba(255,255,255,.55)',
-        pointHoverBackgroundColor: '#fff',
+        backgroundColor: "rgba(255,255,255,.1)",
+        borderColor: "rgba(255,255,255,.55)",
+        pointHoverBackgroundColor: "#fff",
         borderWidth: 2,
         data: dataset.data,
-        label: dataset.label,
-      },
-    ],
+        label: dataset.label
+      }
+    ]
   };
   return () => data;
 };
@@ -243,78 +243,78 @@ const socialChartOpts = {
   responsive: true,
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
-        display: false,
-      },
+        display: false
+      }
     ],
     yAxes: [
       {
-        display: false,
-      },
-    ],
+        display: false
+      }
+    ]
   },
   elements: {
     point: {
       radius: 0,
       hitRadius: 10,
       hoverRadius: 4,
-      hoverBorderWidth: 3,
-    },
-  },
+      hoverBorderWidth: 3
+    }
+  }
 };
 
 // sparkline charts
 const sparkLineChartData = [
   {
     data: [35, 23, 56, 22, 97, 23, 64],
-    label: 'New Clients',
+    label: "New Clients"
   },
   {
     data: [65, 59, 84, 84, 51, 55, 40],
-    label: 'Recurring Clients',
+    label: "Recurring Clients"
   },
   {
     data: [35, 23, 56, 22, 97, 23, 64],
-    label: 'Pageviews',
+    label: "Pageviews"
   },
   {
     data: [65, 59, 84, 84, 51, 55, 40],
-    label: 'Organic',
+    label: "Organic"
   },
   {
     data: [78, 81, 80, 45, 34, 12, 40],
-    label: 'CTR',
+    label: "CTR"
   },
   {
     data: [1, 13, 9, 17, 34, 41, 38],
-    label: 'Bounce Rate',
-  },
+    label: "Bounce Rate"
+  }
 ];
 
 const makeSparkLineData = (dataSetNo, letiant?) => {
   const dataset = sparkLineChartData[dataSetNo];
   const data = {
     labels: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday',
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
     ],
     datasets: [
       {
-        backgroundColor: 'transparent',
-        borderColor: letiant ? letiant : '#c2cfd6',
+        backgroundColor: "transparent",
+        borderColor: letiant ? letiant : "#c2cfd6",
         data: dataset.data,
-        label: dataset.label,
-      },
-    ],
+        label: dataset.label
+      }
+    ]
   };
   return () => data;
 };
@@ -325,41 +325,41 @@ const sparklineChartOpts = {
   scales: {
     xAxes: [
       {
-        display: false,
-      },
+        display: false
+      }
     ],
     yAxes: [
       {
-        display: false,
-      },
-    ],
+        display: false
+      }
+    ]
   },
   elements: {
     line: {
-      borderWidth: 2,
+      borderWidth: 2
     },
     point: {
       radius: 0,
       hitRadius: 10,
       hoverRadius: 4,
-      hoverBorderWidth: 3,
-    },
+      hoverBorderWidth: 3
+    }
   },
   legend: {
-    display: false,
-  },
+    display: false
+  }
 };
 
 // Main Chart
 
 // convert Hex to RGBA
 function convertHex(hex, opacity) {
-  hex = hex.replace('#', '');
+  hex = hex.replace("#", "");
   let r = parseInt(hex.substring(0, 2), 16);
   let g = parseInt(hex.substring(2, 4), 16);
   let b = parseInt(hex.substring(4, 6), 16);
 
-  let result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
+  let result = "rgba(" + r + "," + g + "," + b + "," + opacity / 100 + ")";
   return result;
 }
 
@@ -381,76 +381,76 @@ for (let i = 0; i <= elements; i++) {
 
 const mainChart = {
   labels: [
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
-    'S',
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
-    'S',
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
-    'S',
-    'M',
-    'T',
-    'W',
-    'T',
-    'F',
-    'S',
-    'S',
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S",
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S",
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S",
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S",
+    "S"
   ],
   datasets: [
     {
-      label: 'My First dataset',
+      label: "My First dataset",
       backgroundColor: convertHex(brandInfo, 10),
       borderColor: brandInfo,
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: "#fff",
       borderWidth: 2,
-      data: data1,
+      data: data1
     },
     {
-      label: 'My Second dataset',
-      backgroundColor: 'transparent',
+      label: "My Second dataset",
+      backgroundColor: "transparent",
       borderColor: brandSuccess,
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: "#fff",
       borderWidth: 2,
-      data: data2,
+      data: data2
     },
     {
-      label: 'My Third dataset',
-      backgroundColor: 'transparent',
+      label: "My Third dataset",
+      backgroundColor: "transparent",
       borderColor: brandDanger,
-      pointHoverBackgroundColor: '#fff',
+      pointHoverBackgroundColor: "#fff",
       borderWidth: 1,
       borderDash: [8, 5],
-      data: data3,
-    },
-  ],
+      data: data3
+    }
+  ]
 };
 
 const mainChartOpts = {
   maintainAspectRatio: false,
   legend: {
-    display: false,
+    display: false
   },
   scales: {
     xAxes: [
       {
         gridLines: {
-          drawOnChartArea: false,
-        },
-      },
+          drawOnChartArea: false
+        }
+      }
     ],
     yAxes: [
       {
@@ -458,19 +458,19 @@ const mainChartOpts = {
           beginAtZero: true,
           maxTicksLimit: 5,
           stepSize: Math.ceil(250 / 5),
-          max: 250,
-        },
-      },
-    ],
+          max: 250
+        }
+      }
+    ]
   },
   elements: {
     point: {
       radius: 0,
       hitRadius: 10,
       hoverRadius: 4,
-      hoverBorderWidth: 3,
-    },
-  },
+      hoverBorderWidth: 3
+    }
+  }
 };
 
 class Dashboard extends React.Component<any, any> {
@@ -479,13 +479,13 @@ class Dashboard extends React.Component<any, any> {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false,
+      dropdownOpen: false
     };
   }
 
   toggle() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen,
+      dropdownOpen: !this.state.dropdownOpen
     });
   }
 
@@ -517,7 +517,7 @@ class Dashboard extends React.Component<any, any> {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBody>
-              <div className="chart-wrapper px-3" style={{ height: '70px' }}>
+              <div className="chart-wrapper px-3" style={{ height: "70px" }}>
                 <Line
                   data={cardChartData1}
                   options={cardChartOpts1}
@@ -550,7 +550,7 @@ class Dashboard extends React.Component<any, any> {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBody>
-              <div className="chart-wrapper px-3" style={{ height: '70px' }}>
+              <div className="chart-wrapper px-3" style={{ height: "70px" }}>
                 <Line
                   data={cardChartData2}
                   options={cardChartOpts2}
@@ -583,7 +583,7 @@ class Dashboard extends React.Component<any, any> {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBody>
-              <div className="chart-wrapper px-0" style={{ height: '70px' }}>
+              <div className="chart-wrapper px-0" style={{ height: "70px" }}>
                 <Line
                   data={cardChartData3}
                   options={cardChartOpts3}
@@ -616,7 +616,7 @@ class Dashboard extends React.Component<any, any> {
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
               </CardBody>
-              <div className="chart-wrapper px-3" style={{ height: '70px' }}>
+              <div className="chart-wrapper px-3" style={{ height: "70px" }}>
                 <Bar
                   data={cardChartData4}
                   options={cardChartOpts4}
@@ -663,14 +663,14 @@ class Dashboard extends React.Component<any, any> {
                             name="options"
                             id="option2"
                             defaultChecked
-                          />{' '}
+                          />{" "}
                           Month
                         </Label>
                         <Label
                           htmlFor="option3"
                           className="btn btn-outline-secondary"
                         >
-                          <Input type="radio" name="options" id="option3" />{' '}
+                          <Input type="radio" name="options" id="option3" />{" "}
                           Year
                         </Label>
                       </ButtonGroup>
@@ -679,7 +679,7 @@ class Dashboard extends React.Component<any, any> {
                 </Row>
                 <div
                   className="chart-wrapper"
-                  style={{ height: 300 + 'px', marginTop: 40 + 'px' }}
+                  style={{ height: 300 + "px", marginTop: 40 + "px" }}
                 >
                   <Line data={mainChart} options={mainChartOpts} height={300} />
                 </div>
@@ -834,7 +834,7 @@ class Dashboard extends React.Component<any, any> {
         <Row>
           <Col>
             <Card>
-              <CardHeader>Traffic {'&'} Sales</CardHeader>
+              <CardHeader>Traffic {"&"} Sales</CardHeader>
               <CardBody>
                 <Row>
                   <Col xs="12" md="6" xl="4">
@@ -1051,7 +1051,7 @@ class Dashboard extends React.Component<any, any> {
                         <i className="icon-globe" />
                         <span className="title">Organic Search</span>
                         <span className="value">
-                          191,235{' '}
+                          191,235{" "}
                           <span className="text-muted small">(56%)</span>
                         </span>
                         <div className="bars">
@@ -1304,7 +1304,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/1.jpg'}
+                            src={"img/avatars/1.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1319,9 +1319,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/USA.png'}
+                          src={"img/flags/USA.png"}
                           alt="USA"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1344,7 +1344,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-cc-mastercard"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1356,7 +1356,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/2.jpg'}
+                            src={"img/avatars/2.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1371,9 +1371,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/Brazil.png'}
+                          src={"img/flags/Brazil.png"}
                           alt="Brazil"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1396,7 +1396,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-cc-visa"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1408,7 +1408,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/3.jpg'}
+                            src={"img/avatars/3.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1423,9 +1423,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/India.png'}
+                          src={"img/flags/India.png"}
                           alt="India"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1448,7 +1448,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-cc-stripe"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1460,7 +1460,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/4.jpg'}
+                            src={"img/avatars/4.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1475,9 +1475,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/France.png'}
+                          src={"img/flags/France.png"}
                           alt="France"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1500,7 +1500,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-paypal"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1512,7 +1512,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/5.jpg'}
+                            src={"img/avatars/5.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1527,9 +1527,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/Spain.png'}
+                          src={"img/flags/Spain.png"}
                           alt="Spain"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1552,7 +1552,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-google-wallet"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1564,7 +1564,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <div className="avatar">
                           <img
-                            src={'img/avatars/6.jpg'}
+                            src={"img/avatars/6.jpg"}
                             className="img-avatar"
                             alt="admin@bootstrapmaster.com"
                           />
@@ -1579,9 +1579,9 @@ class Dashboard extends React.Component<any, any> {
                       </td>
                       <td className="text-center">
                         <img
-                          src={'img/flags/Poland.png'}
+                          src={"img/flags/Poland.png"}
                           alt="Poland"
-                          style={{ height: 24 + 'px' }}
+                          style={{ height: 24 + "px" }}
                         />
                       </td>
                       <td>
@@ -1604,7 +1604,7 @@ class Dashboard extends React.Component<any, any> {
                       <td className="text-center">
                         <i
                           className="fa fa-cc-amex"
-                          style={{ fontSize: 24 + 'px' }}
+                          style={{ fontSize: 24 + "px" }}
                         />
                       </td>
                       <td>
