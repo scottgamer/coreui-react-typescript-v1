@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from "react";
 import {
   Row,
   Col,
@@ -7,8 +7,8 @@ import {
   CardBody,
   Label,
   Input,
-  Table,
-} from 'reactstrap';
+  Table
+} from "reactstrap";
 
 class Switches extends React.Component {
   render() {
@@ -900,8 +900,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf164'}
-                    data-off={'\uf165'}
+                    data-on={"\uf164"}
+                    data-off={"\uf165"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -914,8 +914,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf087'}
-                    data-off={'\uf088'}
+                    data-on={"\uf087"}
+                    data-off={"\uf088"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -928,8 +928,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf028'}
-                    data-off={'\uf026'}
+                    data-on={"\uf028"}
+                    data-off={"\uf026"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -942,8 +942,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -956,8 +956,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -970,8 +970,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -991,8 +991,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1005,8 +1005,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1019,8 +1019,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1033,8 +1033,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1047,8 +1047,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1061,8 +1061,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1082,8 +1082,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1096,8 +1096,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1110,8 +1110,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1124,8 +1124,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1138,8 +1138,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1152,8 +1152,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1173,8 +1173,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1187,8 +1187,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1201,8 +1201,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1215,8 +1215,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1229,8 +1229,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1243,8 +1243,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1264,8 +1264,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1278,8 +1278,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1292,8 +1292,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1306,8 +1306,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1320,8 +1320,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1334,8 +1334,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1357,8 +1357,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1371,8 +1371,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1385,8 +1385,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1399,8 +1399,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1413,8 +1413,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
@@ -1427,8 +1427,8 @@ class Switches extends React.Component {
                   />
                   <span
                     className="switch-label"
-                    data-on={'\uf00c'}
-                    data-off={'\uf00d'}
+                    data-on={"\uf00c"}
+                    data-off={"\uf00d"}
                   />
                   <span className="switch-handle" />
                 </Label>
