@@ -1,2 +1,2 @@
-import SidebarForm from './SidebarForm';
+import SidebarForm from "./SidebarForm";
 export default SidebarForm;
