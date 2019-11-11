@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Row, Col, Card, CardHeader, CardBody, Button } from 'reactstrap';
+import React from "react";
+import { Row, Col, Card, CardHeader, CardBody, Button } from "reactstrap";
 
 class Buttons extends React.Component {
   render() {
@@ -12,12 +12,12 @@ class Buttons extends React.Component {
                 <strong>Options</strong>
               </CardHeader>
               <CardBody>
-                <Button color="primary">Primary</Button>{' '}
-                <Button color="secondary">Secondary</Button>{' '}
-                <Button color="success">Success</Button>{' '}
-                <Button color="warning">Warning</Button>{' '}
-                <Button color="danger">Danger</Button>{' '}
-                <Button color="link">Link</Button>{' '}
+                <Button color="primary">Primary</Button>{" "}
+                <Button color="secondary">Secondary</Button>{" "}
+                <Button color="success">Success</Button>{" "}
+                <Button color="warning">Warning</Button>{" "}
+                <Button color="danger">Danger</Button>{" "}
+                <Button color="link">Link</Button>{" "}
               </CardBody>
             </Card>
             <Card>
@@ -27,23 +27,27 @@ class Buttons extends React.Component {
               <CardBody>
                 <Button color="primary">
                   <i className="fa fa-star" />
-                  {'\u00A0'} Primary
+                  {"\u00A0"} Primary
                 </Button>
                 <Button color="secondary">
                   <i className="fa fa-lightbulb-o" />
-                  {'\u00A0 Secondary'}
+                  {"\u00A0 Secondary"}
                 </Button>
                 <Button color="success">
-                  <i className="fa fa-magic" />&nbsp; Success
+                  <i className="fa fa-magic" />
+                  &nbsp; Success
                 </Button>
                 <Button color="warning">
-                  <i className="fa fa-map-marker" />&nbsp; Warning
+                  <i className="fa fa-map-marker" />
+                  &nbsp; Warning
                 </Button>
                 <Button color="danger">
-                  <i className="fa fa-rss" />&nbsp; Danger
+                  <i className="fa fa-rss" />
+                  &nbsp; Danger
                 </Button>
                 <Button color="link">
-                  <i className="fa fa-link" />&nbsp; Link
+                  <i className="fa fa-link" />
+                  &nbsp; Link
                 </Button>
               </CardBody>
             </Card>
@@ -232,19 +236,24 @@ class Buttons extends React.Component {
               </CardHeader>
               <CardBody>
                 <Button outline color="primary">
-                  <i className="fa fa-star" />&nbsp; Primary
+                  <i className="fa fa-star" />
+                  &nbsp; Primary
                 </Button>
                 <Button outline color="secondary">
-                  <i className="fa fa-lightbulb-o" />&nbsp; Secondary
+                  <i className="fa fa-lightbulb-o" />
+                  &nbsp; Secondary
                 </Button>
                 <Button outline color="success">
-                  <i className="fa fa-magic" />&nbsp; Success
+                  <i className="fa fa-magic" />
+                  &nbsp; Success
                 </Button>
                 <Button outline color="warning">
-                  <i className="fa fa-map-marker" />&nbsp; Warning
+                  <i className="fa fa-map-marker" />
+                  &nbsp; Warning
                 </Button>
                 <Button outline color="danger">
-                  <i className="fa fa-rss" />&nbsp; Danger
+                  <i className="fa fa-rss" />
+                  &nbsp; Danger
                 </Button>
               </CardBody>
             </Card>

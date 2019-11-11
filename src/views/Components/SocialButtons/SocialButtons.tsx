@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Row, Col, Card, CardHeader, CardBody, Button } from 'reactstrap';
+import * as React from "react";
+import { Row, Col, Card, CardHeader, CardBody, Button } from "reactstrap";
 
 class SocialButtons extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class SocialButtons extends React.Component {
               <CardHeader>
                 <strong>Social Media Button</strong>
                 <small>Usage ex.</small>
-                <code style={{ textTransform: 'lowercase' }}>
+                <code style={{ textTransform: "lowercase" }}>
                   &lt;button className="btn-facebook"&gt;&lt;span&gt;
                   Facebook&lt;/span&gt;&lt;/Button&gt;
                 </code>
@@ -270,7 +270,7 @@ class SocialButtons extends React.Component {
               <CardHeader>
                 <strong>Social Media Button</strong>
                 <small>Only icons. Usage ex.</small>
-                <code style={{ textTransform: 'lowercase' }}>
+                <code style={{ textTransform: "lowercase" }}>
                   &lt;button className="btn-facebook icon"&gt;&lt;span&gt;
                   Facebook&lt;/span&gt;&lt;/Button&gt;
                 </code>
@@ -529,7 +529,7 @@ class SocialButtons extends React.Component {
               <CardHeader>
                 <strong>Social Media Button</strong>
                 <small>Only text. Usage ex.</small>
-                <code style={{ textTransform: 'lowercase' }}>
+                <code style={{ textTransform: "lowercase" }}>
                   &lt;button className="btn-facebook text"&gt;&lt;span&gt;
                   Facebook&lt;/span&gt;&lt;/Button&gt;
                 </code>

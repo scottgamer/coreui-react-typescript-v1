@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from "react";
 import {
   Row,
   Col,
@@ -9,8 +9,8 @@ import {
   ModalFooter,
   Card,
   CardHeader,
-  CardBody,
-} from 'reactstrap';
+  CardBody
+} from "reactstrap";
 
 class Modals extends React.Component<any, any> {
   constructor(props) {
@@ -23,7 +23,7 @@ class Modals extends React.Component<any, any> {
       success: false,
       warning: false,
       danger: false,
-      info: false,
+      info: false
     };
 
     this.toggle = this.toggle.bind(this);
@@ -38,49 +38,49 @@ class Modals extends React.Component<any, any> {
 
   toggle() {
     this.setState({
-      modal: !this.state.modal,
+      modal: !this.state.modal
     });
   }
 
   toggleLarge() {
     this.setState({
-      large: !this.state.large,
+      large: !this.state.large
     });
   }
 
   toggleSmall() {
     this.setState({
-      small: !this.state.small,
+      small: !this.state.small
     });
   }
 
   togglePrimary() {
     this.setState({
-      primary: !this.state.primary,
+      primary: !this.state.primary
     });
   }
 
   toggleSuccess() {
     this.setState({
-      success: !this.state.success,
+      success: !this.state.success
     });
   }
 
   toggleWarning() {
     this.setState({
-      warning: !this.state.warning,
+      warning: !this.state.warning
     });
   }
 
   toggleDanger() {
     this.setState({
-      danger: !this.state.danger,
+      danger: !this.state.danger
     });
   }
 
   toggleInfo() {
     this.setState({
-      info: !this.state.info,
+      info: !this.state.info
     });
   }
 
@@ -114,7 +114,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggle}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggle}>
                       Cancel
                     </Button>
@@ -125,7 +125,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.large}
                   toggle={this.toggleLarge}
-                  className={'modal-lg ' + this.props.className}
+                  className={"modal-lg " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleLarge}>
                     Modal title
@@ -143,7 +143,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggleLarge}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleLarge}>
                       Cancel
                     </Button>
@@ -154,7 +154,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.small}
                   toggle={this.toggleSmall}
-                  className={'modal-sm ' + this.props.className}
+                  className={"modal-sm " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleSmall}>
                     Modal title
@@ -172,7 +172,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggleSmall}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleSmall}>
                       Cancel
                     </Button>
@@ -187,7 +187,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.primary}
                   toggle={this.togglePrimary}
-                  className={'modal-primary ' + this.props.className}
+                  className={"modal-primary " + this.props.className}
                 >
                   <ModalHeader toggle={this.togglePrimary}>
                     Modal title
@@ -205,7 +205,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="primary" onClick={this.togglePrimary}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.togglePrimary}>
                       Cancel
                     </Button>
@@ -218,7 +218,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.success}
                   toggle={this.toggleSuccess}
-                  className={'modal-success ' + this.props.className}
+                  className={"modal-success " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleSuccess}>
                     Modal title
@@ -236,7 +236,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="success" onClick={this.toggleSuccess}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleSuccess}>
                       Cancel
                     </Button>
@@ -249,7 +249,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.warning}
                   toggle={this.toggleWarning}
-                  className={'modal-warning ' + this.props.className}
+                  className={"modal-warning " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleWarning}>
                     Modal title
@@ -267,7 +267,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="warning" onClick={this.toggleWarning}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleWarning}>
                       Cancel
                     </Button>
@@ -280,7 +280,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.danger}
                   toggle={this.toggleDanger}
-                  className={'modal-danger ' + this.props.className}
+                  className={"modal-danger " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleDanger}>
                     Modal title
@@ -298,7 +298,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="danger" onClick={this.toggleDanger}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleDanger}>
                       Cancel
                     </Button>
@@ -311,7 +311,7 @@ class Modals extends React.Component<any, any> {
                 <Modal
                   isOpen={this.state.info}
                   toggle={this.toggleInfo}
-                  className={'modal-info ' + this.props.className}
+                  className={"modal-info " + this.props.className}
                 >
                   <ModalHeader toggle={this.toggleInfo}>
                     Modal title
@@ -329,7 +329,7 @@ class Modals extends React.Component<any, any> {
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggleInfo}>
                       Do Something
-                    </Button>{' '}
+                    </Button>{" "}
                     <Button color="secondary" onClick={this.toggleInfo}>
                       Cancel
                     </Button>

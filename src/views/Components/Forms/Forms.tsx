@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   Row,
   Col,
@@ -120,7 +120,11 @@ class Forms extends React.Component<any, any> {
               <CardBody>
                 <FormGroup>
                   <Label htmlFor="company">Company</Label>
-                  <Input type="text" id="company" placeholder="Enter your company name" />
+                  <Input
+                    type="text"
+                    id="company"
+                    placeholder="Enter your company name"
+                  />
                 </FormGroup>
                 <FormGroup>
                   <Label htmlFor="vat">VAT</Label>
@@ -128,19 +132,31 @@ class Forms extends React.Component<any, any> {
                 </FormGroup>
                 <FormGroup>
                   <Label htmlFor="street">Street</Label>
-                  <Input type="text" id="street" placeholder="Enter street name" />
+                  <Input
+                    type="text"
+                    id="street"
+                    placeholder="Enter street name"
+                  />
                 </FormGroup>
                 <FormGroup row>
                   <Col xs="8">
                     <FormGroup>
                       <Label htmlFor="city">City</Label>
-                      <Input type="text" id="city" placeholder="Enter your city" />
+                      <Input
+                        type="text"
+                        id="city"
+                        placeholder="Enter your city"
+                      />
                     </FormGroup>
                   </Col>
                   <Col xs="8">
                     <FormGroup>
                       <Label htmlFor="postal-code">Postal Code</Label>
-                      <Input type="text" id="postal-code" placeholder="Postal Code" />
+                      <Input
+                        type="text"
+                        id="postal-code"
+                        placeholder="Postal Code"
+                      />
                     </FormGroup>
                   </Col>
                 </FormGroup>
@@ -198,7 +214,9 @@ class Forms extends React.Component<any, any> {
                         name="email-input"
                         placeholder="Enter Email"
                       />
-                      <FormText className="help-block">Please enter your email</FormText>
+                      <FormText className="help-block">
+                        Please enter your email
+                      </FormText>
                     </Col>
                   </FormGroup>
                   <FormGroup row>
@@ -493,7 +511,9 @@ class Forms extends React.Component<any, any> {
                   </FormGroup>
                   <FormGroup row>
                     <Col md="3">
-                      <Label htmlFor="file-multiple-input">Multiple File input</Label>
+                      <Label htmlFor="file-multiple-input">
+                        Multiple File input
+                      </Label>
                     </Col>
                     <Col xs="12" md="9">
                       <Input
@@ -591,7 +611,9 @@ class Forms extends React.Component<any, any> {
                         name="hf-email"
                         placeholder="Enter Email..."
                       />
-                      <span className="help-block">Please enter your email</span>
+                      <span className="help-block">
+                        Please enter your email
+                      </span>
                     </Col>
                   </FormGroup>
                   <FormGroup row>
@@ -605,7 +627,9 @@ class Forms extends React.Component<any, any> {
                         name="hf-password"
                         placeholder="Enter Password..."
                       />
-                      <span className="help-block">Please enter your password</span>
+                      <span className="help-block">
+                        Please enter your password
+                      </span>
                     </Col>
                   </FormGroup>
                 </Form>
@@ -643,7 +667,9 @@ class Forms extends React.Component<any, any> {
                       name="nf-password"
                       placeholder="Enter Password.."
                     />
-                    <span className="help-block">Please enter your password</span>
+                    <span className="help-block">
+                      Please enter your password
+                    </span>
                   </FormGroup>
                 </Form>
               </CardBody>
@@ -796,7 +822,11 @@ class Forms extends React.Component<any, any> {
                 </FormGroup>
                 <FormGroup>
                   <Label htmlFor="inputIsInvalid">Input is invalid</Label>
-                  <Input type="text" className="is-invalid" id="inputIsInvalid" />
+                  <Input
+                    type="text"
+                    className="is-invalid"
+                    id="inputIsInvalid"
+                  />
                 </FormGroup>
               </CardBody>
             </Card>
@@ -880,7 +910,9 @@ class Forms extends React.Component<any, any> {
                           name="input3-group1"
                           placeholder=".."
                         />
-                        <InputGroupAddon addonType="prepend">.00</InputGroupAddon>
+                        <InputGroupAddon addonType="prepend">
+                          .00
+                        </InputGroupAddon>
                       </InputGroup>
                     </Col>
                   </FormGroup>
@@ -980,7 +1012,9 @@ class Forms extends React.Component<any, any> {
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.first ? "show" : ""}>
+                          <DropdownMenu
+                            className={this.state.first ? "show" : ""}
+                          >
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1015,7 +1049,9 @@ class Forms extends React.Component<any, any> {
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.second ? "show" : ""}>
+                          <DropdownMenu
+                            className={this.state.second ? "show" : ""}
+                          >
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1039,7 +1075,9 @@ class Forms extends React.Component<any, any> {
                           <DropdownToggle caret color="primary">
                             Action
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.third ? "show" : ""}>
+                          <DropdownMenu
+                            className={this.state.third ? "show" : ""}
+                          >
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1062,7 +1100,9 @@ class Forms extends React.Component<any, any> {
                           <DropdownToggle caret color="primary">
                             Dropdown
                           </DropdownToggle>
-                          <DropdownMenu className={this.state.fourth ? "show" : ""}>
+                          <DropdownMenu
+                            className={this.state.fourth ? "show" : ""}
+                          >
                             <DropdownItem>Action</DropdownItem>
                             <DropdownItem>Another Action</DropdownItem>
                             <DropdownItem>Something else here</DropdownItem>
@@ -1092,7 +1132,8 @@ class Forms extends React.Component<any, any> {
               <CardHeader>
                 Use the grid for big devices!
                 <small>
-                  <code>.col-lg-*</code> <code>.col-md-*</code> <code>.col-sm-*</code>
+                  <code>.col-lg-*</code> <code>.col-md-*</code>{" "}
+                  <code>.col-sm-*</code>
                 </small>
               </CardHeader>
               <CardBody>
@@ -1238,7 +1279,9 @@ class Forms extends React.Component<any, any> {
                 <Form action="" method="post">
                   <FormGroup>
                     <InputGroup>
-                      <InputGroupAddon addonType="prepend">Username</InputGroupAddon>
+                      <InputGroupAddon addonType="prepend">
+                        Username
+                      </InputGroupAddon>
                       <Input type="text" id="username3" name="username3" />
                       <InputGroupAddon addonType="prepend">
                         <i className="fa fa-user" />
@@ -1247,7 +1290,9 @@ class Forms extends React.Component<any, any> {
                   </FormGroup>
                   <FormGroup>
                     <InputGroup>
-                      <InputGroupAddon addonType="prepend">Email</InputGroupAddon>
+                      <InputGroupAddon addonType="prepend">
+                        Email
+                      </InputGroupAddon>
                       <Input type="email" id="email3" name="email3" />
                       <InputGroupAddon addonType="prepend">
                         <i className="fa fa-envelope" />
@@ -1256,7 +1301,9 @@ class Forms extends React.Component<any, any> {
                   </FormGroup>
                   <FormGroup>
                     <InputGroup>
-                      <InputGroupAddon addonType="prepend">Password</InputGroupAddon>
+                      <InputGroupAddon addonType="prepend">
+                        Password
+                      </InputGroupAddon>
                       <Input type="password" id="password3" name="password3" />
                       <InputGroupAddon addonType="prepend">
                         <i className="fa fa-asterisk" />
@@ -1292,7 +1339,12 @@ class Forms extends React.Component<any, any> {
                   </FormGroup>
                   <FormGroup>
                     <InputGroup>
-                      <Input type="email" id="email2" name="email2" placeholder="Email" />
+                      <Input
+                        type="email"
+                        id="email2"
+                        name="email2"
+                        placeholder="Email"
+                      />
                       <InputGroupAddon addonType="prepend">
                         <i className="fa fa-envelope" />
                       </InputGroupAddon>
@@ -1343,7 +1395,12 @@ class Forms extends React.Component<any, any> {
                       <InputGroupAddon addonType="prepend">
                         <i className="fa fa-envelope" />
                       </InputGroupAddon>
-                      <Input type="email" id="email" name="email" placeholder="Email" />
+                      <Input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                      />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup>
@@ -1404,23 +1461,35 @@ class Forms extends React.Component<any, any> {
                     <div className="controls">
                       <InputGroup>
                         <Input id="appendedInput" size={16} type="text" />
-                        <InputGroupAddon addonType="prepend">.00</InputGroupAddon>
+                        <InputGroupAddon addonType="prepend">
+                          .00
+                        </InputGroupAddon>
                       </InputGroup>
                       <span className="help-block">Here's more help text</span>
                     </div>
                   </FormGroup>
                   <FormGroup>
-                    <Label htmlFor="appendedPrependedInput">Append and prepend</Label>
+                    <Label htmlFor="appendedPrependedInput">
+                      Append and prepend
+                    </Label>
                     <div className="controls">
                       <InputGroup className="input-prepend">
                         <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-                        <Input id="appendedPrependedInput" size={16} type="text" />
-                        <InputGroupAddon addonType="prepend">.00</InputGroupAddon>
+                        <Input
+                          id="appendedPrependedInput"
+                          size={16}
+                          type="text"
+                        />
+                        <InputGroupAddon addonType="prepend">
+                          .00
+                        </InputGroupAddon>
                       </InputGroup>
                     </div>
                   </FormGroup>
                   <FormGroup>
-                    <Label htmlFor="appendedInputButton">Append with button</Label>
+                    <Label htmlFor="appendedInputButton">
+                      Append with button
+                    </Label>
                     <div className="controls">
                       <InputGroup>
                         <Input id="appendedInputButton" size={16} type="text" />
@@ -1429,10 +1498,16 @@ class Forms extends React.Component<any, any> {
                     </div>
                   </FormGroup>
                   <FormGroup>
-                    <Label htmlFor="appendedInputButtons">Two-button append</Label>
+                    <Label htmlFor="appendedInputButtons">
+                      Two-button append
+                    </Label>
                     <div className="controls">
                       <InputGroup>
-                        <Input id="appendedInputButtons" size={16} type="text" />
+                        <Input
+                          id="appendedInputButtons"
+                          size={16}
+                          type="text"
+                        />
                         <Button color="secondary">Search</Button>
                         <Button color="secondary">Options</Button>
                       </InputGroup>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from "react";
 import {
   Badge,
   Row,
@@ -8,9 +8,9 @@ import {
   CardFooter,
   CardBody,
   Label,
-  Input,
-} from 'reactstrap';
- 
+  Input
+} from "reactstrap";
+
 class Cards extends React.Component {
   render() {
     return (
@@ -43,7 +43,8 @@ class Cards extends React.Component {
           <Col xs="12" sm="6" md="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-check float-right" />Card with icon
+                <i className="fa fa-check float-right" />
+                Card with icon
               </CardHeader>
               <CardBody>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -267,8 +268,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>
@@ -283,8 +284,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>
@@ -299,8 +300,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>
@@ -315,8 +316,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>
@@ -331,8 +332,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>
@@ -347,8 +348,8 @@ class Cards extends React.Component {
                     Integer posuere erat a ante.
                   </p>
                   <footer>
-                    Someone famous in{' '}
-                    <cite title="Source Title">Source Title</cite>{' '}
+                    Someone famous in{" "}
+                    <cite title="Source Title">Source Title</cite>{" "}
                   </footer>
                 </blockquote>
               </CardBody>

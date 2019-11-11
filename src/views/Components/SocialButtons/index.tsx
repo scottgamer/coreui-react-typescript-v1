@@ -1,2 +1,2 @@
-import SocialButtons from './SocialButtons';
+import SocialButtons from "./SocialButtons";
 export default SocialButtons;
