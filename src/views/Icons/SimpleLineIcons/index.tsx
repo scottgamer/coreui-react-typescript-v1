@@ -1,2 +1,2 @@
-import SimpleLineIcons from './SimpleLineIcons';
+import SimpleLineIcons from "./SimpleLineIcons";
 export default SimpleLineIcons;
