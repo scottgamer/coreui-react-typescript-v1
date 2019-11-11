@@ -1,2 +1,2 @@
-import SidebarMinimizer from './SidebarMinimizer';
+import SidebarMinimizer from "./SidebarMinimizer";
 export default SidebarMinimizer;

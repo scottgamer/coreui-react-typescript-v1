@@ -1,2 +1,2 @@
-import SidebarFooter from './SidebarFooter';
+import SidebarFooter from "./SidebarFooter";
 export default SidebarFooter;
