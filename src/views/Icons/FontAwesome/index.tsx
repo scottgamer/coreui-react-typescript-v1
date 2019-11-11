@@ -1,2 +1,2 @@
-import FontAwesome from './FontAwesome';
+import FontAwesome from "./FontAwesome";
 export default FontAwesome;

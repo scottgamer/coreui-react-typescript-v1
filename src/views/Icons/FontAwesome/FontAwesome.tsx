@@ -1,2311 +1,2773 @@
-import * as React from 'react';
-import { Alert, Row, Col, Card, CardHeader, CardBody } from 'reactstrap';
+import React from "react";
+import { Alert, Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 
 class FontAwesome extends React.Component<any, any> {
   render() {
     return (
       <div className="animated fadeIn">
-        <Card >
+        <Card>
           <CardHeader>55 New Icons in 4.7</CardHeader>
           <CardBody>
             <Row className="text-center">
               <Col className="fa-hover" xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-address-book fa-lg mt-4" />
-                <br />address-book
+                <br />
+                address-book
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-address-book-o fa-lg mt-4" />
-                <br />address-book-o
+                <br />
+                address-book-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-address-card fa-lg mt-4" />
-                <br />address-card
+                <br />
+                address-card
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-address-card-o fa-lg mt-4" />
-                <br />address-card-o
+                <br />
+                address-card-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bandcamp fa-lg mt-4" />
-                <br />bandcamp
+                <br />
+                bandcamp
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bath fa-lg mt-4" />
-                <br />bath
+                <br />
+                bath
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bathtub fa-lg mt-4" />
-                <br />bathtub <span className="text-muted">(alias)</span>
+                <br />
+                bathtub <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-drivers-license fa-lg mt-4" />
-                <br />drivers-license{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                drivers-license <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-drivers-license-o fa-lg mt-4" />
-                <br />drivers-license-o{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                drivers-license-o <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eercast fa-lg mt-4" />
-                <br />eercast
+                <br />
+                eercast
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-envelope-open fa-lg mt-4" />
-                <br />envelope-open
+                <br />
+                envelope-open
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-envelope-open-o fa-lg mt-4" />
-                <br />envelope-open-o
+                <br />
+                envelope-open-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-etsy fa-lg mt-4" />
-                <br />etsy
+                <br />
+                etsy
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-free-code-camp fa-lg mt-4" />
-                <br />free-code-camp
+                <br />
+                free-code-camp
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-grav fa-lg mt-4" />
-                <br />grav
+                <br />
+                grav
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-handshake-o fa-lg mt-4" />
-                <br />handshake-o
+                <br />
+                handshake-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-id-badge fa-lg mt-4" />
-                <br />id-badge
+                <br />
+                id-badge
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-id-card fa-lg mt-4" />
-                <br />id-card
+                <br />
+                id-card
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-id-card-o fa-lg mt-4" />
-                <br />id-card-o
+                <br />
+                id-card-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-imdb fa-lg mt-4" />
-                <br />imdb
+                <br />
+                imdb
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-linode fa-lg mt-4" />
-                <br />linode
+                <br />
+                linode
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-meetup fa-lg mt-4" />
-                <br />meetup
+                <br />
+                meetup
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-microchip fa-lg mt-4" />
-                <br />microchip
+                <br />
+                microchip
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-podcast fa-lg mt-4" />
-                <br />podcast
+                <br />
+                podcast
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-quora fa-lg mt-4" />
-                <br />quora
+                <br />
+                quora
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ravelry fa-lg mt-4" />
-                <br />ravelry
+                <br />
+                ravelry
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-s15 fa-lg mt-4" />
-                <br />s15 <span className="text-muted">(alias)</span>
+                <br />
+                s15 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shower fa-lg mt-4" />
-                <br />shower
+                <br />
+                shower
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-snowflake-o fa-lg mt-4" />
-                <br />snowflake-o
+                <br />
+                snowflake-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-superpowers fa-lg mt-4" />
-                <br />superpowers
+                <br />
+                superpowers
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-telegram fa-lg mt-4" />
-                <br />telegram
+                <br />
+                telegram
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer fa-lg mt-4" />
-                <br />thermometer <span className="text-muted">(alias)</span>
+                <br />
+                thermometer <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-0 fa-lg mt-4" />
-                <br />thermometer-0 <span className="text-muted">(alias)</span>
+                <br />
+                thermometer-0 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-1 fa-lg mt-4" />
-                <br />thermometer-1 <span className="text-muted">(alias)</span>
+                <br />
+                thermometer-1 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-2 fa-lg mt-4" />
-                <br />thermometer-2 <span className="text-muted">(alias)</span>
+                <br />
+                thermometer-2 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-3 fa-lg mt-4" />
-                <br />thermometer-3 <span className="text-muted">(alias)</span>
+                <br />
+                thermometer-3 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-4 fa-lg mt-4" />
-                <br />thermometer-4 <span className="text-muted">(alias)</span>
+                <br />
+                thermometer-4 <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-empty fa-lg mt-4" />
-                <br />thermometer-empty
+                <br />
+                thermometer-empty
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-full fa-lg mt-4" />
-                <br />thermometer-full
+                <br />
+                thermometer-full
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-half fa-lg mt-4" />
-                <br />thermometer-half
+                <br />
+                thermometer-half
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-quarter fa-lg mt-4" />
-                <br />thermometer-quarter
+                <br />
+                thermometer-quarter
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thermometer-three-quarters fa-lg mt-4" />
-                <br />thermometer-three-quarters
+                <br />
+                thermometer-three-quarters
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-times-rectangle fa-lg mt-4" />
-                <br />times-rectangle{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                times-rectangle <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-times-rectangle-o fa-lg mt-4" />
-                <br />times-rectangle-o{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                times-rectangle-o <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-circle fa-lg mt-4" />
-                <br />user-circle
+                <br />
+                user-circle
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-circle-o fa-lg mt-4" />
-                <br />user-circle-o
+                <br />
+                user-circle-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-o fa-lg mt-4" />
-                <br />user-o
+                <br />
+                user-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vcard fa-lg mt-4" />
-                <br />vcard <span className="text-muted">(alias)</span>
+                <br />
+                vcard <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vcard-o fa-lg mt-4" />
-                <br />vcard-o <span className="text-muted">(alias)</span>
+                <br />
+                vcard-o <span className="text-muted">(alias)</span>
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-window-close fa-lg mt-4" />
-                <br />window-close
+                <br />
+                window-close
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-window-close-o fa-lg mt-4" />
-                <br />window-close-o
+                <br />
+                window-close-o
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-window-maximize fa-lg mt-4" />
-                <br />window-maximize
+                <br />
+                window-maximize
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-window-minimize fa-lg mt-4" />
-                <br />window-minimize
+                <br />
+                window-minimize
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-window-restore fa-lg mt-4" />
-                <br />window-restore
+                <br />
+                window-restore
               </Col>
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wpexplorer fa-lg mt-4" />
-                <br />wpexplorer
+                <br />
+                wpexplorer
               </Col>
             </Row>
           </CardBody>
         </Card>
-        <Card >
+        <Card>
           <CardHeader>20 New Icons in 4.5</CardHeader>
           <CardBody>
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth fa-lg mt-4" />
-                <br />bluetooth
+                <br />
+                bluetooth
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth-b fa-lg mt-4" />
-                <br />bluetooth-b
+                <br />
+                bluetooth-b
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-codiepie fa-lg mt-4" />
-                <br />codiepie
+                <br />
+                codiepie
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-credit-card-alt fa-lg mt-4" />
-                <br />credit-card-alt
+                <br />
+                credit-card-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-edge fa-lg mt-4" />
-                <br />edge
+                <br />
+                edge
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fort-awesome fa-lg mt-4" />
-                <br />fort-awesome
+                <br />
+                fort-awesome
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hashtag fa-lg mt-4" />
-                <br />hashtag
+                <br />
+                hashtag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mixcloud fa-lg mt-4" />
-                <br />mixcloud
+                <br />
+                mixcloud
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-modx fa-lg mt-4" />
-                <br />modx
+                <br />
+                modx
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pause-circle fa-lg mt-4" />
-                <br />pause-circle
+                <br />
+                pause-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pause-circle-o fa-lg mt-4" />
-                <br />pause-circle-o
+                <br />
+                pause-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-percent fa-lg mt-4" />
-                <br />percent
+                <br />
+                percent
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-product-hunt fa-lg mt-4" />
-                <br />product-hunt
+                <br />
+                product-hunt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reddit-alien fa-lg mt-4" />
-                <br />reddit-alien
+                <br />
+                reddit-alien
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-scribd fa-lg mt-4" />
-                <br />scribd
+                <br />
+                scribd
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shopping-bag fa-lg mt-4" />
-                <br />shopping-bag
+                <br />
+                shopping-bag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shopping-basket fa-lg mt-4" />
-                <br />shopping-basket
+                <br />
+                shopping-basket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stop-circle fa-lg mt-4" />
-                <br />stop-circle
+                <br />
+                stop-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stop-circle-o fa-lg mt-4" />
-                <br />stop-circle-o
+                <br />
+                stop-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-usb fa-lg mt-4" />
-                <br />usb
+                <br />
+                usb
               </Col>
             </Row>
           </CardBody>
         </Card>
 
-        <Card >
+        <Card>
           <CardHeader>Web Application Icons</CardHeader>
           <CardBody>
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-adjust fa-lg mt-4" />
-                <br />adjust
+                <br />
+                adjust
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-anchor fa-lg mt-4" />
-                <br />anchor
+                <br />
+                anchor
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-archive fa-lg mt-4" />
-                <br />archive
+                <br />
+                archive
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-area-chart fa-lg mt-4" />
-                <br />area-chart
+                <br />
+                area-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows fa-lg mt-4" />
-                <br />arrows
+                <br />
+                arrows
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-h fa-lg mt-4" />
-                <br />arrows-h
+                <br />
+                arrows-h
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-v fa-lg mt-4" />
-                <br />arrows-v
+                <br />
+                arrows-v
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-asterisk fa-lg mt-4" />
-                <br />asterisk
+                <br />
+                asterisk
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-at fa-lg mt-4" />
-                <br />at
+                <br />
+                at
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-automobile fa-lg mt-4" />
-                <br />automobile <span className="text-muted">(alias)</span>
+                <br />
+                automobile <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-balance-scale fa-lg mt-4" />
-                <br />balance-scale
+                <br />
+                balance-scale
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ban fa-lg mt-4" />
-                <br />ban
+                <br />
+                ban
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bank fa-lg mt-4" />
-                <br />bank <span className="text-muted">(alias)</span>
+                <br />
+                bank <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bar-chart fa-lg mt-4" />
-                <br />bar-chart
+                <br />
+                bar-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bar-chart-o fa-lg mt-4" />
-                <br />bar-chart-o <span className="text-muted">(alias)</span>
+                <br />
+                bar-chart-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-barcode fa-lg mt-4" />
-                <br />barcode
+                <br />
+                barcode
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bars fa-lg mt-4" />
-                <br />bars
+                <br />
+                bars
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-0 fa-lg mt-4" />
-                <br />battery-0 <span className="text-muted">(alias)</span>
+                <br />
+                battery-0 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-1 fa-lg mt-4" />
-                <br />battery-1 <span className="text-muted">(alias)</span>
+                <br />
+                battery-1 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-2 fa-lg mt-4" />
-                <br />battery-2 <span className="text-muted">(alias)</span>
+                <br />
+                battery-2 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-3 fa-lg mt-4" />
-                <br />battery-3 <span className="text-muted">(alias)</span>
+                <br />
+                battery-3 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-4 fa-lg mt-4" />
-                <br />battery-4 <span className="text-muted">(alias)</span>
+                <br />
+                battery-4 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-empty fa-lg mt-4" />
-                <br />battery-empty
+                <br />
+                battery-empty
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-full fa-lg mt-4" />
-                <br />battery-full
+                <br />
+                battery-full
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-half fa-lg mt-4" />
-                <br />battery-half
+                <br />
+                battery-half
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-quarter fa-lg mt-4" />
-                <br />battery-quarter
+                <br />
+                battery-quarter
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-battery-three-quarters fa-lg mt-4" />
-                <br />battery-three-quarters
+                <br />
+                battery-three-quarters
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bed fa-lg mt-4" />
-                <br />bed
+                <br />
+                bed
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-beer fa-lg mt-4" />
-                <br />beer
+                <br />
+                beer
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bell fa-lg mt-4" />
-                <br />bell
+                <br />
+                bell
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bell-o fa-lg mt-4" />
-                <br />bell-o
+                <br />
+                bell-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bell-slash fa-lg mt-4" />
-                <br />bell-slash
+                <br />
+                bell-slash
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bell-slash-o fa-lg mt-4" />
-                <br />bell-slash-o
+                <br />
+                bell-slash-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bicycle fa-lg mt-4" />
-                <br />bicycle
+                <br />
+                bicycle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-binoculars fa-lg mt-4" />
-                <br />binoculars
+                <br />
+                binoculars
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-birthday-cake fa-lg mt-4" />
-                <br />birthday-cake
+                <br />
+                birthday-cake
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth fa-lg mt-4" />
-                <br />bluetooth
+                <br />
+                bluetooth
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth-b fa-lg mt-4" />
-                <br />bluetooth-b
+                <br />
+                bluetooth-b
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bolt fa-lg mt-4" />
-                <br />bolt
+                <br />
+                bolt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bomb fa-lg mt-4" />
-                <br />bomb
+                <br />
+                bomb
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-book fa-lg mt-4" />
-                <br />book
+                <br />
+                book
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bookmark fa-lg mt-4" />
-                <br />bookmark
+                <br />
+                bookmark
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bookmark-o fa-lg mt-4" />
-                <br />bookmark-o
+                <br />
+                bookmark-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-briefcase fa-lg mt-4" />
-                <br />briefcase
+                <br />
+                briefcase
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bug fa-lg mt-4" />
-                <br />bug
+                <br />
+                bug
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-building fa-lg mt-4" />
-                <br />building
+                <br />
+                building
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-building-o fa-lg mt-4" />
-                <br />building-o
+                <br />
+                building-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bullhorn fa-lg mt-4" />
-                <br />bullhorn
+                <br />
+                bullhorn
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bullseye fa-lg mt-4" />
-                <br />bullseye
+                <br />
+                bullseye
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bus fa-lg mt-4" />
-                <br />bus
+                <br />
+                bus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cab fa-lg mt-4" />
-                <br />cab <span className="text-muted">(alias)</span>
+                <br />
+                cab <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calculator fa-lg mt-4" />
-                <br />calculator
+                <br />
+                calculator
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar fa-lg mt-4" />
-                <br />calendar
+                <br />
+                calendar
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar-check-o fa-lg mt-4" />
-                <br />calendar-check-o
+                <br />
+                calendar-check-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar-minus-o fa-lg mt-4" />
-                <br />calendar-minus-o
+                <br />
+                calendar-minus-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar-o fa-lg mt-4" />
-                <br />calendar-o
+                <br />
+                calendar-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar-plus-o fa-lg mt-4" />
-                <br />calendar-plus-o
+                <br />
+                calendar-plus-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-calendar-times-o fa-lg mt-4" />
-                <br />calendar-times-o
+                <br />
+                calendar-times-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-camera fa-lg mt-4" />
-                <br />camera
+                <br />
+                camera
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-camera-retro fa-lg mt-4" />
-                <br />camera-retro
+                <br />
+                camera-retro
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-car fa-lg mt-4" />
-                <br />car
+                <br />
+                car
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-down fa-lg mt-4" />
-                <br />caret-square-o-down
+                <br />
+                caret-square-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-left fa-lg mt-4" />
-                <br />caret-square-o-left
+                <br />
+                caret-square-o-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-right fa-lg mt-4" />
-                <br />caret-square-o-right
+                <br />
+                caret-square-o-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-up fa-lg mt-4" />
-                <br />caret-square-o-up
+                <br />
+                caret-square-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cart-arrow-down fa-lg mt-4" />
-                <br />cart-arrow-down
+                <br />
+                cart-arrow-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cart-plus fa-lg mt-4" />
-                <br />cart-plus
+                <br />
+                cart-plus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc fa-lg mt-4" />
-                <br />cc
+                <br />
+                cc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-certificate fa-lg mt-4" />
-                <br />certificate
+                <br />
+                certificate
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check fa-lg mt-4" />
-                <br />check
+                <br />
+                check
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-circle fa-lg mt-4" />
-                <br />check-circle
+                <br />
+                check-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-circle-o fa-lg mt-4" />
-                <br />check-circle-o
+                <br />
+                check-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-square fa-lg mt-4" />
-                <br />check-square
+                <br />
+                check-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-square-o fa-lg mt-4" />
-                <br />check-square-o
+                <br />
+                check-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-child fa-lg mt-4" />
-                <br />child
+                <br />
+                child
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle fa-lg mt-4" />
-                <br />circle
+                <br />
+                circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle-o fa-lg mt-4" />
-                <br />circle-o
+                <br />
+                circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle-o-notch fa-lg mt-4" />
-                <br />circle-o-notch
+                <br />
+                circle-o-notch
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle-thin fa-lg mt-4" />
-                <br />circle-thin
+                <br />
+                circle-thin
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-clock-o fa-lg mt-4" />
-                <br />clock-o
+                <br />
+                clock-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-clone fa-lg mt-4" />
-                <br />clone
+                <br />
+                clone
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-close fa-lg mt-4" />
-                <br />close <span className="text-muted">(alias)</span>
+                <br />
+                close <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cloud fa-lg mt-4" />
-                <br />cloud
+                <br />
+                cloud
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cloud-download fa-lg mt-4" />
-                <br />cloud-download
+                <br />
+                cloud-download
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cloud-upload fa-lg mt-4" />
-                <br />cloud-upload
+                <br />
+                cloud-upload
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-code fa-lg mt-4" />
-                <br />code
+                <br />
+                code
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-code-fork fa-lg mt-4" />
-                <br />code-fork
+                <br />
+                code-fork
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-coffee fa-lg mt-4" />
-                <br />coffee
+                <br />
+                coffee
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cog fa-lg mt-4" />
-                <br />cog
+                <br />
+                cog
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cogs fa-lg mt-4" />
-                <br />cogs
+                <br />
+                cogs
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-comment fa-lg mt-4" />
-                <br />comment
+                <br />
+                comment
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-comment-o fa-lg mt-4" />
-                <br />comment-o
+                <br />
+                comment-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-commenting fa-lg mt-4" />
-                <br />commenting
+                <br />
+                commenting
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-commenting-o fa-lg mt-4" />
-                <br />commenting-o
+                <br />
+                commenting-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-comments fa-lg mt-4" />
-                <br />comments
+                <br />
+                comments
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-comments-o fa-lg mt-4" />
-                <br />comments-o
+                <br />
+                comments-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-compass fa-lg mt-4" />
-                <br />compass
+                <br />
+                compass
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-copyright fa-lg mt-4" />
-                <br />copyright
+                <br />
+                copyright
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-creative-commons fa-lg mt-4" />
-                <br />creative-commons
+                <br />
+                creative-commons
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-credit-card fa-lg mt-4" />
-                <br />credit-card
+                <br />
+                credit-card
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-credit-card-alt fa-lg mt-4" />
-                <br />credit-card-alt
+                <br />
+                credit-card-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-crop fa-lg mt-4" />
-                <br />crop
+                <br />
+                crop
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-crosshairs fa-lg mt-4" />
-                <br />crosshairs
+                <br />
+                crosshairs
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cube fa-lg mt-4" />
-                <br />cube
+                <br />
+                cube
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cubes fa-lg mt-4" />
-                <br />cubes
+                <br />
+                cubes
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cutlery fa-lg mt-4" />
-                <br />cutlery
+                <br />
+                cutlery
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dashboard fa-lg mt-4" />
-                <br />dashboard <span className="text-muted">(alias)</span>
+                <br />
+                dashboard <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-database fa-lg mt-4" />
-                <br />database
+                <br />
+                database
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-desktop fa-lg mt-4" />
-                <br />desktop
+                <br />
+                desktop
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-diamond fa-lg mt-4" />
-                <br />diamond
+                <br />
+                diamond
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dot-circle-o fa-lg mt-4" />
-                <br />dot-circle-o
+                <br />
+                dot-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-download fa-lg mt-4" />
-                <br />download
+                <br />
+                download
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-edit fa-lg mt-4" />
-                <br />edit <span className="text-muted">(alias)</span>
+                <br />
+                edit <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ellipsis-h fa-lg mt-4" />
-                <br />ellipsis-h
+                <br />
+                ellipsis-h
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ellipsis-v fa-lg mt-4" />
-                <br />ellipsis-v
+                <br />
+                ellipsis-v
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-envelope fa-lg mt-4" />
-                <br />envelope
+                <br />
+                envelope
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-envelope-o fa-lg mt-4" />
-                <br />envelope-o
+                <br />
+                envelope-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-envelope-square fa-lg mt-4" />
-                <br />envelope-square
+                <br />
+                envelope-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eraser fa-lg mt-4" />
-                <br />eraser
+                <br />
+                eraser
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-exchange fa-lg mt-4" />
-                <br />exchange
+                <br />
+                exchange
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-exclamation fa-lg mt-4" />
-                <br />exclamation
+                <br />
+                exclamation
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-exclamation-circle fa-lg mt-4" />
-                <br />exclamation-circle
+                <br />
+                exclamation-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-exclamation-triangle fa-lg mt-4" />
-                <br />exclamation-triangle
+                <br />
+                exclamation-triangle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-external-link fa-lg mt-4" />
-                <br />external-link
+                <br />
+                external-link
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-external-link-square fa-lg mt-4" />
-                <br />external-link-square
+                <br />
+                external-link-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eye fa-lg mt-4" />
-                <br />eye
+                <br />
+                eye
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eye-slash fa-lg mt-4" />
-                <br />eye-slash
+                <br />
+                eye-slash
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eyedropper fa-lg mt-4" />
-                <br />eyedropper
+                <br />
+                eyedropper
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fax fa-lg mt-4" />
-                <br />fax
+                <br />
+                fax
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-feed fa-lg mt-4" />
-                <br />feed <span className="text-muted">(alias)</span>
+                <br />
+                feed <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-female fa-lg mt-4" />
-                <br />female
+                <br />
+                female
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fighter-jet fa-lg mt-4" />
-                <br />fighter-jet
+                <br />
+                fighter-jet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-archive-o fa-lg mt-4" />
-                <br />file-archive-o
+                <br />
+                file-archive-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-audio-o fa-lg mt-4" />
-                <br />file-audio-o
+                <br />
+                file-audio-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-code-o fa-lg mt-4" />
-                <br />file-code-o
+                <br />
+                file-code-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-excel-o fa-lg mt-4" />
-                <br />file-excel-o
+                <br />
+                file-excel-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-image-o fa-lg mt-4" />
-                <br />file-image-o
+                <br />
+                file-image-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-movie-o fa-lg mt-4" />
-                <br />file-movie-o <span className="text-muted">(alias)</span>
+                <br />
+                file-movie-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-pdf-o fa-lg mt-4" />
-                <br />file-pdf-o
+                <br />
+                file-pdf-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-photo-o fa-lg mt-4" />
-                <br />file-photo-o <span className="text-muted">(alias)</span>
+                <br />
+                file-photo-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-picture-o fa-lg mt-4" />
-                <br />file-picture-o <span className="text-muted">(alias)</span>
+                <br />
+                file-picture-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-powerpoint-o fa-lg mt-4" />
-                <br />file-powerpoint-o
+                <br />
+                file-powerpoint-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-sound-o fa-lg mt-4" />
-                <br />file-sound-o <span className="text-muted">(alias)</span>
+                <br />
+                file-sound-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-video-o fa-lg mt-4" />
-                <br />file-video-o
+                <br />
+                file-video-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-word-o fa-lg mt-4" />
-                <br />file-word-o
+                <br />
+                file-word-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-zip-o fa-lg mt-4" />
-                <br />file-zip-o <span className="text-muted">(alias)</span>
+                <br />
+                file-zip-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-film fa-lg mt-4" />
-                <br />film
+                <br />
+                film
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-filter fa-lg mt-4" />
-                <br />filter
+                <br />
+                filter
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fire fa-lg mt-4" />
-                <br />fire
+                <br />
+                fire
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fire-extinguisher fa-lg mt-4" />
-                <br />fire-extinguisher
+                <br />
+                fire-extinguisher
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flag fa-lg mt-4" />
-                <br />flag
+                <br />
+                flag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flag-checkered fa-lg mt-4" />
-                <br />flag-checkered
+                <br />
+                flag-checkered
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flag-o fa-lg mt-4" />
-                <br />flag-o
+                <br />
+                flag-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flash fa-lg mt-4" />
-                <br />flash <span className="text-muted">(alias)</span>
+                <br />
+                flash <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flask fa-lg mt-4" />
-                <br />flask
+                <br />
+                flask
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-folder fa-lg mt-4" />
-                <br />folder
+                <br />
+                folder
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-folder-o fa-lg mt-4" />
-                <br />folder-o
+                <br />
+                folder-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-folder-open fa-lg mt-4" />
-                <br />folder-open
+                <br />
+                folder-open
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-folder-open-o fa-lg mt-4" />
-                <br />folder-open-o
+                <br />
+                folder-open-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-frown-o fa-lg mt-4" />
-                <br />frown-o
+                <br />
+                frown-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-futbol-o fa-lg mt-4" />
-                <br />futbol-o
+                <br />
+                futbol-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gamepad fa-lg mt-4" />
-                <br />gamepad
+                <br />
+                gamepad
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gavel fa-lg mt-4" />
-                <br />gavel
+                <br />
+                gavel
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gear fa-lg mt-4" />
-                <br />gear <span className="text-muted">(alias)</span>
+                <br />
+                gear <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gears fa-lg mt-4" />
-                <br />gears <span className="text-muted">(alias)</span>
+                <br />
+                gears <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gift fa-lg mt-4" />
-                <br />gift
+                <br />
+                gift
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-glass fa-lg mt-4" />
-                <br />glass
+                <br />
+                glass
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-globe fa-lg mt-4" />
-                <br />globe
+                <br />
+                globe
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-graduation-cap fa-lg mt-4" />
-                <br />graduation-cap
+                <br />
+                graduation-cap
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-group fa-lg mt-4" />
-                <br />group <span className="text-muted">(alias)</span>
+                <br />
+                group <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-grab-o fa-lg mt-4" />
-                <br />hand-grab-o <span className="text-muted">(alias)</span>
+                <br />
+                hand-grab-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-lizard-o fa-lg mt-4" />
-                <br />hand-lizard-o
+                <br />
+                hand-lizard-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-paper-o fa-lg mt-4" />
-                <br />hand-paper-o
+                <br />
+                hand-paper-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-peace-o fa-lg mt-4" />
-                <br />hand-peace-o
+                <br />
+                hand-peace-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-pointer-o fa-lg mt-4" />
-                <br />hand-pointer-o
+                <br />
+                hand-pointer-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-rock-o fa-lg mt-4" />
-                <br />hand-rock-o
+                <br />
+                hand-rock-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-scissors-o fa-lg mt-4" />
-                <br />hand-scissors-o
+                <br />
+                hand-scissors-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-spock-o fa-lg mt-4" />
-                <br />hand-spock-o
+                <br />
+                hand-spock-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-stop-o fa-lg mt-4" />
-                <br />hand-stop-o <span className="text-muted">(alias)</span>
+                <br />
+                hand-stop-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hashtag fa-lg mt-4" />
-                <br />hashtag
+                <br />
+                hashtag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hdd-o fa-lg mt-4" />
-                <br />hdd-o
+                <br />
+                hdd-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-headphones fa-lg mt-4" />
-                <br />headphones
+                <br />
+                headphones
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heart fa-lg mt-4" />
-                <br />heart
+                <br />
+                heart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heart-o fa-lg mt-4" />
-                <br />heart-o
+                <br />
+                heart-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heartbeat fa-lg mt-4" />
-                <br />heartbeat
+                <br />
+                heartbeat
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-history fa-lg mt-4" />
-                <br />history
+                <br />
+                history
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-home fa-lg mt-4" />
-                <br />home
+                <br />
+                home
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hotel fa-lg mt-4" />
-                <br />hotel <span className="text-muted">(alias)</span>
+                <br />
+                hotel <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass fa-lg mt-4" />
-                <br />hourglass
+                <br />
+                hourglass
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-1 fa-lg mt-4" />
-                <br />hourglass-1 <span className="text-muted">(alias)</span>
+                <br />
+                hourglass-1 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-2 fa-lg mt-4" />
-                <br />hourglass-2 <span className="text-muted">(alias)</span>
+                <br />
+                hourglass-2 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-3 fa-lg mt-4" />
-                <br />hourglass-3 <span className="text-muted">(alias)</span>
+                <br />
+                hourglass-3 <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-end fa-lg mt-4" />
-                <br />hourglass-end
+                <br />
+                hourglass-end
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-half fa-lg mt-4" />
-                <br />hourglass-half
+                <br />
+                hourglass-half
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-o fa-lg mt-4" />
-                <br />hourglass-o
+                <br />
+                hourglass-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hourglass-start fa-lg mt-4" />
-                <br />hourglass-start
+                <br />
+                hourglass-start
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-i-cursor fa-lg mt-4" />
-                <br />i-cursor
+                <br />
+                i-cursor
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-image fa-lg mt-4" />
-                <br />image <span className="text-muted">(alias)</span>
+                <br />
+                image <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-inbox fa-lg mt-4" />
-                <br />inbox
+                <br />
+                inbox
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-industry fa-lg mt-4" />
-                <br />industry
+                <br />
+                industry
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-info fa-lg mt-4" />
-                <br />info
+                <br />
+                info
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-info-circle fa-lg mt-4" />
-                <br />info-circle
+                <br />
+                info-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-institution fa-lg mt-4" />
-                <br />institution <span className="text-muted">(alias)</span>
+                <br />
+                institution <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-key fa-lg mt-4" />
-                <br />key
+                <br />
+                key
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-keyboard-o fa-lg mt-4" />
-                <br />keyboard-o
+                <br />
+                keyboard-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-language fa-lg mt-4" />
-                <br />language
+                <br />
+                language
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-laptop fa-lg mt-4" />
-                <br />laptop
+                <br />
+                laptop
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-leaf fa-lg mt-4" />
-                <br />leaf
+                <br />
+                leaf
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-legal fa-lg mt-4" />
-                <br />legal <span className="text-muted">(alias)</span>
+                <br />
+                legal <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-lemon-o fa-lg mt-4" />
-                <br />lemon-o
+                <br />
+                lemon-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-level-down fa-lg mt-4" />
-                <br />level-down
+                <br />
+                level-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-level-up fa-lg mt-4" />
-                <br />level-up
+                <br />
+                level-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-life-bouy fa-lg mt-4" />
-                <br />life-bouy <span className="text-muted">(alias)</span>
+                <br />
+                life-bouy <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-life-buoy fa-lg mt-4" />
-                <br />life-buoy <span className="text-muted">(alias)</span>
+                <br />
+                life-buoy <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-life-ring fa-lg mt-4" />
-                <br />life-ring
+                <br />
+                life-ring
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-life-saver fa-lg mt-4" />
-                <br />life-saver <span className="text-muted">(alias)</span>
+                <br />
+                life-saver <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-lightbulb-o fa-lg mt-4" />
-                <br />lightbulb-o
+                <br />
+                lightbulb-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-line-chart fa-lg mt-4" />
-                <br />line-chart
+                <br />
+                line-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-location-arrow fa-lg mt-4" />
-                <br />location-arrow
+                <br />
+                location-arrow
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-lock fa-lg mt-4" />
-                <br />lock
+                <br />
+                lock
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-magic fa-lg mt-4" />
-                <br />magic
+                <br />
+                magic
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-magnet fa-lg mt-4" />
-                <br />magnet
+                <br />
+                magnet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mail-forward fa-lg mt-4" />
-                <br />mail-forward <span className="text-muted">(alias)</span>
+                <br />
+                mail-forward <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mail-reply fa-lg mt-4" />
-                <br />mail-reply <span className="text-muted">(alias)</span>
+                <br />
+                mail-reply <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mail-reply-all fa-lg mt-4" />
-                <br />mail-reply-all <span className="text-muted">(alias)</span>
+                <br />
+                mail-reply-all <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-male fa-lg mt-4" />
-                <br />male
+                <br />
+                male
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-map fa-lg mt-4" />
-                <br />map
+                <br />
+                map
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-map-marker fa-lg mt-4" />
-                <br />map-marker
+                <br />
+                map-marker
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-map-o fa-lg mt-4" />
-                <br />map-o
+                <br />
+                map-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-map-pin fa-lg mt-4" />
-                <br />map-pin
+                <br />
+                map-pin
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-map-signs fa-lg mt-4" />
-                <br />map-signs
+                <br />
+                map-signs
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-meh-o fa-lg mt-4" />
-                <br />meh-o
+                <br />
+                meh-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-microphone fa-lg mt-4" />
-                <br />microphone
+                <br />
+                microphone
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-microphone-slash fa-lg mt-4" />
-                <br />microphone-slash
+                <br />
+                microphone-slash
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus fa-lg mt-4" />
-                <br />minus
+                <br />
+                minus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus-circle fa-lg mt-4" />
-                <br />minus-circle
+                <br />
+                minus-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus-square fa-lg mt-4" />
-                <br />minus-square
+                <br />
+                minus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus-square-o fa-lg mt-4" />
-                <br />minus-square-o
+                <br />
+                minus-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mobile fa-lg mt-4" />
-                <br />mobile
+                <br />
+                mobile
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mobile-phone fa-lg mt-4" />
-                <br />mobile-phone <span className="text-muted">(alias)</span>
+                <br />
+                mobile-phone <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-money fa-lg mt-4" />
-                <br />money
+                <br />
+                money
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-moon-o fa-lg mt-4" />
-                <br />moon-o
+                <br />
+                moon-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mortar-board fa-lg mt-4" />
-                <br />mortar-board <span className="text-muted">(alias)</span>
+                <br />
+                mortar-board <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-motorcycle fa-lg mt-4" />
-                <br />motorcycle
+                <br />
+                motorcycle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mouse-pointer fa-lg mt-4" />
-                <br />mouse-pointer
+                <br />
+                mouse-pointer
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-music fa-lg mt-4" />
-                <br />music
+                <br />
+                music
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-navicon fa-lg mt-4" />
-                <br />navicon <span className="text-muted">(alias)</span>
+                <br />
+                navicon <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-newspaper-o fa-lg mt-4" />
-                <br />newspaper-o
+                <br />
+                newspaper-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-object-group fa-lg mt-4" />
-                <br />object-group
+                <br />
+                object-group
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-object-ungroup fa-lg mt-4" />
-                <br />object-ungroup
+                <br />
+                object-ungroup
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paint-brush fa-lg mt-4" />
-                <br />paint-brush
+                <br />
+                paint-brush
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paper-plane fa-lg mt-4" />
-                <br />paper-plane
+                <br />
+                paper-plane
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paper-plane-o fa-lg mt-4" />
-                <br />paper-plane-o
+                <br />
+                paper-plane-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paw fa-lg mt-4" />
-                <br />paw
+                <br />
+                paw
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pencil fa-lg mt-4" />
-                <br />pencil
+                <br />
+                pencil
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pencil-square fa-lg mt-4" />
-                <br />pencil-square
+                <br />
+                pencil-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pencil-square-o fa-lg mt-4" />
-                <br />pencil-square-o
+                <br />
+                pencil-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-percent fa-lg mt-4" />
-                <br />percent
+                <br />
+                percent
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-phone fa-lg mt-4" />
-                <br />phone
+                <br />
+                phone
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-phone-square fa-lg mt-4" />
-                <br />phone-square
+                <br />
+                phone-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-photo fa-lg mt-4" />
-                <br />photo <span className="text-muted">(alias)</span>
+                <br />
+                photo <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-picture-o fa-lg mt-4" />
-                <br />picture-o
+                <br />
+                picture-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pie-chart fa-lg mt-4" />
-                <br />pie-chart
+                <br />
+                pie-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plane fa-lg mt-4" />
-                <br />plane
+                <br />
+                plane
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plug fa-lg mt-4" />
-                <br />plug
+                <br />
+                plug
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus fa-lg mt-4" />
-                <br />plus
+                <br />
+                plus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-circle fa-lg mt-4" />
-                <br />plus-circle
+                <br />
+                plus-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-square fa-lg mt-4" />
-                <br />plus-square
+                <br />
+                plus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-square-o fa-lg mt-4" />
-                <br />plus-square-o
+                <br />
+                plus-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-power-off fa-lg mt-4" />
-                <br />power-off
+                <br />
+                power-off
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-print fa-lg mt-4" />
-                <br />print
+                <br />
+                print
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-puzzle-piece fa-lg mt-4" />
-                <br />puzzle-piece
+                <br />
+                puzzle-piece
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-qrcode fa-lg mt-4" />
-                <br />qrcode
+                <br />
+                qrcode
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-question fa-lg mt-4" />
-                <br />question
+                <br />
+                question
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-question-circle fa-lg mt-4" />
-                <br />question-circle
+                <br />
+                question-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-quote-left fa-lg mt-4" />
-                <br />quote-left
+                <br />
+                quote-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-quote-right fa-lg mt-4" />
-                <br />quote-right
+                <br />
+                quote-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-random fa-lg mt-4" />
-                <br />random
+                <br />
+                random
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-recycle fa-lg mt-4" />
-                <br />recycle
+                <br />
+                recycle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-refresh fa-lg mt-4" />
-                <br />refresh
+                <br />
+                refresh
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-registered fa-lg mt-4" />
-                <br />registered
+                <br />
+                registered
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-remove fa-lg mt-4" />
-                <br />remove <span className="text-muted">(alias)</span>
+                <br />
+                remove <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reorder fa-lg mt-4" />
-                <br />reorder <span className="text-muted">(alias)</span>
+                <br />
+                reorder <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reply fa-lg mt-4" />
-                <br />reply
+                <br />
+                reply
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reply-all fa-lg mt-4" />
-                <br />reply-all
+                <br />
+                reply-all
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-retweet fa-lg mt-4" />
-                <br />retweet
+                <br />
+                retweet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-road fa-lg mt-4" />
-                <br />road
+                <br />
+                road
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rocket fa-lg mt-4" />
-                <br />rocket
+                <br />
+                rocket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rss fa-lg mt-4" />
-                <br />rss
+                <br />
+                rss
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rss-square fa-lg mt-4" />
-                <br />rss-square
+                <br />
+                rss-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-search fa-lg mt-4" />
-                <br />search
+                <br />
+                search
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-search-minus fa-lg mt-4" />
-                <br />search-minus
+                <br />
+                search-minus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-search-plus fa-lg mt-4" />
-                <br />search-plus
+                <br />
+                search-plus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-send fa-lg mt-4" />
-                <br />send <span className="text-muted">(alias)</span>
+                <br />
+                send <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-send-o fa-lg mt-4" />
-                <br />send-o <span className="text-muted">(alias)</span>
+                <br />
+                send-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-server fa-lg mt-4" />
-                <br />server
+                <br />
+                server
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share fa-lg mt-4" />
-                <br />share
+                <br />
+                share
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-alt fa-lg mt-4" />
-                <br />share-alt
+                <br />
+                share-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-alt-square fa-lg mt-4" />
-                <br />share-alt-square
+                <br />
+                share-alt-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-square fa-lg mt-4" />
-                <br />share-square
+                <br />
+                share-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-square-o fa-lg mt-4" />
-                <br />share-square-o
+                <br />
+                share-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shield fa-lg mt-4" />
-                <br />shield
+                <br />
+                shield
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ship fa-lg mt-4" />
-                <br />ship
+                <br />
+                ship
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shopping-bag fa-lg mt-4" />
-                <br />shopping-bag
+                <br />
+                shopping-bag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shopping-basket fa-lg mt-4" />
-                <br />shopping-basket
+                <br />
+                shopping-basket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shopping-cart fa-lg mt-4" />
-                <br />shopping-cart
+                <br />
+                shopping-cart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sign-in fa-lg mt-4" />
-                <br />sign-in
+                <br />
+                sign-in
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sign-out fa-lg mt-4" />
-                <br />sign-out
+                <br />
+                sign-out
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-signal fa-lg mt-4" />
-                <br />signal
+                <br />
+                signal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sitemap fa-lg mt-4" />
-                <br />sitemap
+                <br />
+                sitemap
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sliders fa-lg mt-4" />
-                <br />sliders
+                <br />
+                sliders
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-smile-o fa-lg mt-4" />
-                <br />smile-o
+                <br />
+                smile-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-soccer-ball-o fa-lg mt-4" />
-                <br />soccer-ball-o <span className="text-muted">(alias)</span>
+                <br />
+                soccer-ball-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort fa-lg mt-4" />
-                <br />sort
+                <br />
+                sort
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-alpha-asc fa-lg mt-4" />
-                <br />sort-alpha-asc
+                <br />
+                sort-alpha-asc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-alpha-desc fa-lg mt-4" />
-                <br />sort-alpha-desc
+                <br />
+                sort-alpha-desc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-amount-asc fa-lg mt-4" />
-                <br />sort-amount-asc
+                <br />
+                sort-amount-asc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-amount-desc fa-lg mt-4" />
-                <br />sort-amount-desc
+                <br />
+                sort-amount-desc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-asc fa-lg mt-4" />
-                <br />sort-asc
+                <br />
+                sort-asc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-desc fa-lg mt-4" />
-                <br />sort-desc
+                <br />
+                sort-desc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-down fa-lg mt-4" />
-                <br />sort-down <span className="text-muted">(alias)</span>
+                <br />
+                sort-down <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-numeric-asc fa-lg mt-4" />
-                <br />sort-numeric-asc
+                <br />
+                sort-numeric-asc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-numeric-desc fa-lg mt-4" />
-                <br />sort-numeric-desc
+                <br />
+                sort-numeric-desc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sort-up fa-lg mt-4" />
-                <br />sort-up <span className="text-muted">(alias)</span>
+                <br />
+                sort-up <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-space-shuttle fa-lg mt-4" />
-                <br />space-shuttle
+                <br />
+                space-shuttle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-spinner fa-lg mt-4" />
-                <br />spinner
+                <br />
+                spinner
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-spoon fa-lg mt-4" />
-                <br />spoon
+                <br />
+                spoon
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-square fa-lg mt-4" />
-                <br />square
+                <br />
+                square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-square-o fa-lg mt-4" />
-                <br />square-o
+                <br />
+                square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star fa-lg mt-4" />
-                <br />star
+                <br />
+                star
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star-half fa-lg mt-4" />
-                <br />star-half
+                <br />
+                star-half
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star-half-empty fa-lg mt-4" />
-                <br />star-half-empty{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                star-half-empty <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star-half-full fa-lg mt-4" />
-                <br />star-half-full <span className="text-muted">(alias)</span>
+                <br />
+                star-half-full <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star-half-o fa-lg mt-4" />
-                <br />star-half-o
+                <br />
+                star-half-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-star-o fa-lg mt-4" />
-                <br />star-o
+                <br />
+                star-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sticky-note fa-lg mt-4" />
-                <br />sticky-note
+                <br />
+                sticky-note
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sticky-note-o fa-lg mt-4" />
-                <br />sticky-note-o
+                <br />
+                sticky-note-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-street-view fa-lg mt-4" />
-                <br />street-view
+                <br />
+                street-view
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-suitcase fa-lg mt-4" />
-                <br />suitcase
+                <br />
+                suitcase
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sun-o fa-lg mt-4" />
-                <br />sun-o
+                <br />
+                sun-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-support fa-lg mt-4" />
-                <br />support <span className="text-muted">(alias)</span>
+                <br />
+                support <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tablet fa-lg mt-4" />
-                <br />tablet
+                <br />
+                tablet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tachometer fa-lg mt-4" />
-                <br />tachometer
+                <br />
+                tachometer
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tag fa-lg mt-4" />
-                <br />tag
+                <br />
+                tag
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tags fa-lg mt-4" />
-                <br />tags
+                <br />
+                tags
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tasks fa-lg mt-4" />
-                <br />tasks
+                <br />
+                tasks
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-taxi fa-lg mt-4" />
-                <br />taxi
+                <br />
+                taxi
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-television fa-lg mt-4" />
-                <br />television
+                <br />
+                television
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-terminal fa-lg mt-4" />
-                <br />terminal
+                <br />
+                terminal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumb-tack fa-lg mt-4" />
-                <br />thumb-tack
+                <br />
+                thumb-tack
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-down fa-lg mt-4" />
-                <br />thumbs-down
+                <br />
+                thumbs-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-o-down fa-lg mt-4" />
-                <br />thumbs-o-down
+                <br />
+                thumbs-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-o-up fa-lg mt-4" />
-                <br />thumbs-o-up
+                <br />
+                thumbs-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-up fa-lg mt-4" />
-                <br />thumbs-up
+                <br />
+                thumbs-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ticket fa-lg mt-4" />
-                <br />ticket
+                <br />
+                ticket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-times fa-lg mt-4" />
-                <br />times
+                <br />
+                times
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-times-circle fa-lg mt-4" />
-                <br />times-circle
+                <br />
+                times-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-times-circle-o fa-lg mt-4" />
-                <br />times-circle-o
+                <br />
+                times-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tint fa-lg mt-4" />
-                <br />tint
+                <br />
+                tint
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-down fa-lg mt-4" />
-                <br />toggle-down <span className="text-muted">(alias)</span>
+                <br />
+                toggle-down <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-left fa-lg mt-4" />
-                <br />toggle-left <span className="text-muted">(alias)</span>
+                <br />
+                toggle-left <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-off fa-lg mt-4" />
-                <br />toggle-off
+                <br />
+                toggle-off
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-on fa-lg mt-4" />
-                <br />toggle-on
+                <br />
+                toggle-on
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-right fa-lg mt-4" />
-                <br />toggle-right <span className="text-muted">(alias)</span>
+                <br />
+                toggle-right <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-up fa-lg mt-4" />
-                <br />toggle-up <span className="text-muted">(alias)</span>
+                <br />
+                toggle-up <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-trademark fa-lg mt-4" />
-                <br />trademark
+                <br />
+                trademark
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-trash fa-lg mt-4" />
-                <br />trash
+                <br />
+                trash
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-trash-o fa-lg mt-4" />
-                <br />trash-o
+                <br />
+                trash-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tree fa-lg mt-4" />
-                <br />tree
+                <br />
+                tree
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-trophy fa-lg mt-4" />
-                <br />trophy
+                <br />
+                trophy
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-truck fa-lg mt-4" />
-                <br />truck
+                <br />
+                truck
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tty fa-lg mt-4" />
-                <br />tty
+                <br />
+                tty
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tv fa-lg mt-4" />
-                <br />tv <span className="text-muted">(alias)</span>
+                <br />
+                tv <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-umbrella fa-lg mt-4" />
-                <br />umbrella
+                <br />
+                umbrella
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-university fa-lg mt-4" />
-                <br />university
+                <br />
+                university
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-unlock fa-lg mt-4" />
-                <br />unlock
+                <br />
+                unlock
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-unlock-alt fa-lg mt-4" />
-                <br />unlock-alt
+                <br />
+                unlock-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-unsorted fa-lg mt-4" />
-                <br />unsorted <span className="text-muted">(alias)</span>
+                <br />
+                unsorted <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-upload fa-lg mt-4" />
-                <br />upload
+                <br />
+                upload
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user fa-lg mt-4" />
-                <br />user
+                <br />
+                user
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-plus fa-lg mt-4" />
-                <br />user-plus
+                <br />
+                user-plus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-secret fa-lg mt-4" />
-                <br />user-secret
+                <br />
+                user-secret
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-times fa-lg mt-4" />
-                <br />user-times
+                <br />
+                user-times
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-users fa-lg mt-4" />
-                <br />users
+                <br />
+                users
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-video-camera fa-lg mt-4" />
-                <br />video-camera
+                <br />
+                video-camera
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-volume-down fa-lg mt-4" />
-                <br />volume-down
+                <br />
+                volume-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-volume-off fa-lg mt-4" />
-                <br />volume-off
+                <br />
+                volume-off
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-volume-up fa-lg mt-4" />
-                <br />volume-up
+                <br />
+                volume-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-warning fa-lg mt-4" />
-                <br />warning <span className="text-muted">(alias)</span>
+                <br />
+                warning <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wheelchair fa-lg mt-4" />
-                <br />wheelchair
+                <br />
+                wheelchair
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wifi fa-lg mt-4" />
-                <br />wifi
+                <br />
+                wifi
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wrench fa-lg mt-4" />
-                <br />wrench
+                <br />
+                wrench
               </Col>
             </Row>
           </CardBody>
@@ -2317,256 +2779,304 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-grab-o fa-lg mt-4" />
-                <br />hand-grab-o <span className="text-muted">(alias)</span>
+                <br />
+                hand-grab-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-lizard-o fa-lg mt-4" />
-                <br />hand-lizard-o
+                <br />
+                hand-lizard-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-down fa-lg mt-4" />
-                <br />hand-o-down
+                <br />
+                hand-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-left fa-lg mt-4" />
-                <br />hand-o-left
+                <br />
+                hand-o-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-right fa-lg mt-4" />
-                <br />hand-o-right
+                <br />
+                hand-o-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-up fa-lg mt-4" />
-                <br />hand-o-up
+                <br />
+                hand-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-paper-o fa-lg mt-4" />
-                <br />hand-paper-o
+                <br />
+                hand-paper-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-peace-o fa-lg mt-4" />
-                <br />hand-peace-o
+                <br />
+                hand-peace-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-pointer-o fa-lg mt-4" />
-                <br />hand-pointer-o
+                <br />
+                hand-pointer-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-rock-o fa-lg mt-4" />
-                <br />hand-rock-o
+                <br />
+                hand-rock-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-scissors-o fa-lg mt-4" />
-                <br />hand-scissors-o
+                <br />
+                hand-scissors-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-spock-o fa-lg mt-4" />
-                <br />hand-spock-o
+                <br />
+                hand-spock-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-stop-o fa-lg mt-4" />
-                <br />hand-stop-o <span className="text-muted">(alias)</span>
+                <br />
+                hand-stop-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-down fa-lg mt-4" />
-                <br />thumbs-down
+                <br />
+                thumbs-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-o-down fa-lg mt-4" />
-                <br />thumbs-o-down
+                <br />
+                thumbs-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-o-up fa-lg mt-4" />
-                <br />thumbs-o-up
+                <br />
+                thumbs-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-thumbs-up fa-lg mt-4" />
-                <br />thumbs-up
+                <br />
+                thumbs-up
               </Col>
             </Row>
           </CardBody>
         </Card>
 
-        <Card >
+        <Card>
           <CardHeader>Transportation Icons</CardHeader>
           <CardBody>
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ambulance fa-lg mt-4" />
-                <br />ambulance
+                <br />
+                ambulance
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-automobile fa-lg mt-4" />
-                <br />automobile <span className="text-muted">(alias)</span>
+                <br />
+                automobile <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bicycle fa-lg mt-4" />
-                <br />bicycle
+                <br />
+                bicycle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bus fa-lg mt-4" />
-                <br />bus
+                <br />
+                bus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cab fa-lg mt-4" />
-                <br />cab <span className="text-muted">(alias)</span>
+                <br />
+                cab <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-car fa-lg mt-4" />
-                <br />car
+                <br />
+                car
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fighter-jet fa-lg mt-4" />
-                <br />fighter-jet
+                <br />
+                fighter-jet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-motorcycle fa-lg mt-4" />
-                <br />motorcycle
+                <br />
+                motorcycle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plane fa-lg mt-4" />
-                <br />plane
+                <br />
+                plane
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rocket fa-lg mt-4" />
-                <br />rocket
+                <br />
+                rocket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ship fa-lg mt-4" />
-                <br />ship
+                <br />
+                ship
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-space-shuttle fa-lg mt-4" />
-                <br />space-shuttle
+                <br />
+                space-shuttle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-subway fa-lg mt-4" />
-                <br />subway
+                <br />
+                subway
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-taxi fa-lg mt-4" />
-                <br />taxi
+                <br />
+                taxi
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-train fa-lg mt-4" />
-                <br />train
+                <br />
+                train
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-truck fa-lg mt-4" />
-                <br />truck
+                <br />
+                truck
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wheelchair fa-lg mt-4" />
-                <br />wheelchair
+                <br />
+                wheelchair
               </Col>
             </Row>
           </CardBody>
         </Card>
 
-        <Card >
+        <Card>
           <CardHeader>Gender Icons</CardHeader>
           <CardBody>
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-genderless fa-lg mt-4" />
-                <br />genderless
+                <br />
+                genderless
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-intersex fa-lg mt-4" />
-                <br />intersex <span className="text-muted">(alias)</span>
+                <br />
+                intersex <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mars fa-lg mt-4" />
-                <br />mars
+                <br />
+                mars
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mars-double fa-lg mt-4" />
-                <br />mars-double
+                <br />
+                mars-double
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mars-stroke fa-lg mt-4" />
-                <br />mars-stroke
+                <br />
+                mars-stroke
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mars-stroke-h fa-lg mt-4" />
-                <br />mars-stroke-h
+                <br />
+                mars-stroke-h
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mars-stroke-v fa-lg mt-4" />
-                <br />mars-stroke-v
+                <br />
+                mars-stroke-v
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mercury fa-lg mt-4" />
-                <br />mercury
+                <br />
+                mercury
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-neuter fa-lg mt-4" />
-                <br />neuter
+                <br />
+                neuter
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-transgender fa-lg mt-4" />
-                <br />transgender
+                <br />
+                transgender
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-transgender-alt fa-lg mt-4" />
-                <br />transgender-alt
+                <br />
+                transgender-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-venus fa-lg mt-4" />
-                <br />venus
+                <br />
+                venus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-venus-double fa-lg mt-4" />
-                <br />venus-double
+                <br />
+                venus-double
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-venus-mars fa-lg mt-4" />
-                <br />venus-mars
+                <br />
+                venus-mars
               </Col>
             </Row>
           </CardBody>
@@ -2578,92 +3088,110 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file fa-lg mt-4" />
-                <br />file
+                <br />
+                file
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-archive-o fa-lg mt-4" />
-                <br />file-archive-o
+                <br />
+                file-archive-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-audio-o fa-lg mt-4" />
-                <br />file-audio-o
+                <br />
+                file-audio-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-code-o fa-lg mt-4" />
-                <br />file-code-o
+                <br />
+                file-code-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-excel-o fa-lg mt-4" />
-                <br />file-excel-o
+                <br />
+                file-excel-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-image-o fa-lg mt-4" />
-                <br />file-image-o
+                <br />
+                file-image-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-movie-o fa-lg mt-4" />
-                <br />file-movie-o <span className="text-muted">(alias)</span>
+                <br />
+                file-movie-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-o fa-lg mt-4" />
-                <br />file-o
+                <br />
+                file-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-pdf-o fa-lg mt-4" />
-                <br />file-pdf-o
+                <br />
+                file-pdf-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-photo-o fa-lg mt-4" />
-                <br />file-photo-o <span className="text-muted">(alias)</span>
+                <br />
+                file-photo-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-picture-o fa-lg mt-4" />
-                <br />file-picture-o <span className="text-muted">(alias)</span>
+                <br />
+                file-picture-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-powerpoint-o fa-lg mt-4" />
-                <br />file-powerpoint-o
+                <br />
+                file-powerpoint-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-sound-o fa-lg mt-4" />
-                <br />file-sound-o <span className="text-muted">(alias)</span>
+                <br />
+                file-sound-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-text fa-lg mt-4" />
-                <br />file-text
+                <br />
+                file-text
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-text-o fa-lg mt-4" />
-                <br />file-text-o
+                <br />
+                file-text-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-video-o fa-lg mt-4" />
-                <br />file-video-o
+                <br />
+                file-video-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-word-o fa-lg mt-4" />
-                <br />file-word-o
+                <br />
+                file-word-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-zip-o fa-lg mt-4" />
-                <br />file-zip-o <span className="text-muted">(alias)</span>
+                <br />
+                file-zip-o <span className="text-muted">(alias)</span>
               </Col>
             </Row>
           </CardBody>
@@ -2683,27 +3211,32 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle-o-notch fa-lg fa-spin mt-4" />
-                <br />circle-o-notch
+                <br />
+                circle-o-notch
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cog fa-lg mt-4" />
-                <br />cog
+                <br />
+                cog
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gear fa-lg mt-4" />
-                <br />gear <span className="text-muted">(alias)</span>
+                <br />
+                gear <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-refresh fa-lg mt-4" />
-                <br />refresh
+                <br />
+                refresh
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-spinner fa-lg mt-4" />
-                <br />spinner
+                <br />
+                spinner
               </Col>
             </Row>
           </CardBody>
@@ -2715,57 +3248,68 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-square fa-lg mt-4" />
-                <br />check-square
+                <br />
+                check-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-check-square-o fa-lg mt-4" />
-                <br />check-square-o
+                <br />
+                check-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle fa-lg mt-4" />
-                <br />circle
+                <br />
+                circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-circle-o fa-lg mt-4" />
-                <br />circle-o
+                <br />
+                circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dot-circle-o fa-lg mt-4" />
-                <br />dot-circle-o
+                <br />
+                dot-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus-square fa-lg mt-4" />
-                <br />minus-square
+                <br />
+                minus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-minus-square-o fa-lg mt-4" />
-                <br />minus-square-o
+                <br />
+                minus-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-square fa-lg mt-4" />
-                <br />plus-square
+                <br />
+                plus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-square-o fa-lg mt-4" />
-                <br />plus-square-o
+                <br />
+                plus-square-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-square fa-lg mt-4" />
-                <br />square
+                <br />
+                square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-square-o fa-lg mt-4" />
-                <br />square-o
+                <br />
+                square-o
               </Col>
             </Row>
           </CardBody>
@@ -2777,62 +3321,74 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-amex fa-lg mt-4" />
-                <br />cc-amex
+                <br />
+                cc-amex
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-diners-club fa-lg mt-4" />
-                <br />cc-diners-club
+                <br />
+                cc-diners-club
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-discover fa-lg mt-4" />
-                <br />cc-discover
+                <br />
+                cc-discover
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-jcb fa-lg mt-4" />
-                <br />cc-jcb
+                <br />
+                cc-jcb
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-mastercard fa-lg mt-4" />
-                <br />cc-mastercard
+                <br />
+                cc-mastercard
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-paypal fa-lg mt-4" />
-                <br />cc-paypal
+                <br />
+                cc-paypal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-stripe fa-lg mt-4" />
-                <br />cc-stripe
+                <br />
+                cc-stripe
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-visa fa-lg mt-4" />
-                <br />cc-visa
+                <br />
+                cc-visa
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-credit-card fa-lg mt-4" />
-                <br />credit-card
+                <br />
+                credit-card
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-credit-card-alt fa-lg mt-4" />
-                <br />credit-card-alt
+                <br />
+                credit-card-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-google-wallet fa-lg mt-4" />
-                <br />google-wallet
+                <br />
+                google-wallet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paypal fa-lg mt-4" />
-                <br />paypal
+                <br />
+                paypal
               </Col>
             </Row>
           </CardBody>
@@ -2844,27 +3400,32 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-area-chart fa-lg mt-4" />
-                <br />area-chart
+                <br />
+                area-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bar-chart fa-lg mt-4" />
-                <br />bar-chart
+                <br />
+                bar-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bar-chart-o fa-lg mt-4" />
-                <br />bar-chart-o <span className="text-muted">(alias)</span>
+                <br />
+                bar-chart-o <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-line-chart fa-lg mt-4" />
-                <br />line-chart
+                <br />
+                line-chart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pie-chart fa-lg mt-4" />
-                <br />pie-chart
+                <br />
+                pie-chart
               </Col>
             </Row>
           </CardBody>
@@ -2876,132 +3437,158 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bitcoin fa-lg mt-4" />
-                <br />bitcoin <span className="text-muted">(alias)</span>
+                <br />
+                bitcoin <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-btc fa-lg mt-4" />
-                <br />btc
+                <br />
+                btc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cny fa-lg mt-4" />
-                <br />cny <span className="text-muted">(alias)</span>
+                <br />
+                cny <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dollar fa-lg mt-4" />
-                <br />dollar <span className="text-muted">(alias)</span>
+                <br />
+                dollar <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eur fa-lg mt-4" />
-                <br />eur
+                <br />
+                eur
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-euro fa-lg mt-4" />
-                <br />euro <span className="text-muted">(alias)</span>
+                <br />
+                euro <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gbp fa-lg mt-4" />
-                <br />gbp
+                <br />
+                gbp
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gg fa-lg mt-4" />
-                <br />gg
+                <br />
+                gg
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gg-circle fa-lg mt-4" />
-                <br />gg-circle
+                <br />
+                gg-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ils fa-lg mt-4" />
-                <br />ils
+                <br />
+                ils
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-inr fa-lg mt-4" />
-                <br />inr
+                <br />
+                inr
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-jpy fa-lg mt-4" />
-                <br />jpy
+                <br />
+                jpy
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-krw fa-lg mt-4" />
-                <br />krw
+                <br />
+                krw
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-money fa-lg mt-4" />
-                <br />money
+                <br />
+                money
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rmb fa-lg mt-4" />
-                <br />rmb <span className="text-muted">(alias)</span>
+                <br />
+                rmb <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rouble fa-lg mt-4" />
-                <br />rouble <span className="text-muted">(alias)</span>
+                <br />
+                rouble <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rub fa-lg mt-4" />
-                <br />rub
+                <br />
+                rub
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ruble fa-lg mt-4" />
-                <br />ruble <span className="text-muted">(alias)</span>
+                <br />
+                ruble <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rupee fa-lg mt-4" />
-                <br />rupee <span className="text-muted">(alias)</span>
+                <br />
+                rupee <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shekel fa-lg mt-4" />
-                <br />shekel <span className="text-muted">(alias)</span>
+                <br />
+                shekel <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sheqel fa-lg mt-4" />
-                <br />sheqel <span className="text-muted">(alias)</span>
+                <br />
+                sheqel <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-try fa-lg mt-4" />
-                <br />try
+                <br />
+                try
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-turkish-lira fa-lg mt-4" />
-                <br />turkish-lira <span className="text-muted">(alias)</span>
+                <br />
+                turkish-lira <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-usd fa-lg mt-4" />
-                <br />usd
+                <br />
+                usd
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-won fa-lg mt-4" />
-                <br />won <span className="text-muted">(alias)</span>
+                <br />
+                won <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-yen fa-lg mt-4" />
-                <br />yen <span className="text-muted">(alias)</span>
+                <br />
+                yen <span className="text-muted">(alias)</span>
               </Col>
             </Row>
           </CardBody>
@@ -3013,247 +3600,296 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-align-center fa-lg mt-4" />
-                <br />align-center
+                <br />
+                align-center
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-align-justify fa-lg mt-4" />
-                <br />align-justify
+                <br />
+                align-justify
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-align-left fa-lg mt-4" />
-                <br />align-left
+                <br />
+                align-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-align-right fa-lg mt-4" />
-                <br />align-right
+                <br />
+                align-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bold fa-lg mt-4" />
-                <br />bold
+                <br />
+                bold
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chain fa-lg mt-4" />
-                <br />chain <span className="text-muted">(alias)</span>
+                <br />
+                chain <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chain-broken fa-lg mt-4" />
-                <br />chain-broken
+                <br />
+                chain-broken
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-clipboard fa-lg mt-4" />
-                <br />clipboard
+                <br />
+                clipboard
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-columns fa-lg mt-4" />
-                <br />columns
+                <br />
+                columns
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-copy fa-lg mt-4" />
-                <br />copy <span className="text-muted">(alias)</span>
+                <br />
+                copy <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cut fa-lg mt-4" />
-                <br />cut <span className="text-muted">(alias)</span>
+                <br />
+                cut <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dedent fa-lg mt-4" />
-                <br />dedent <span className="text-muted">(alias)</span>
+                <br />
+                dedent <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eraser fa-lg mt-4" />
-                <br />eraser
+                <br />
+                eraser
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file fa-lg mt-4" />
-                <br />file
+                <br />
+                file
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-o fa-lg mt-4" />
-                <br />file-o
+                <br />
+                file-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-text fa-lg mt-4" />
-                <br />file-text
+                <br />
+                file-text
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-file-text-o fa-lg mt-4" />
-                <br />file-text-o
+                <br />
+                file-text-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-files-o fa-lg mt-4" />
-                <br />files-o
+                <br />
+                files-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-floppy-o fa-lg mt-4" />
-                <br />floppy-o
+                <br />
+                floppy-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-font fa-lg mt-4" />
-                <br />font
+                <br />
+                font
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-header fa-lg mt-4" />
-                <br />header
+                <br />
+                header
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-indent fa-lg mt-4" />
-                <br />indent
+                <br />
+                indent
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-italic fa-lg mt-4" />
-                <br />italic
+                <br />
+                italic
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-link fa-lg mt-4" />
-                <br />link
+                <br />
+                link
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-list fa-lg mt-4" />
-                <br />list
+                <br />
+                list
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-list-alt fa-lg mt-4" />
-                <br />list-alt
+                <br />
+                list-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-list-ol fa-lg mt-4" />
-                <br />list-ol
+                <br />
+                list-ol
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-list-ul fa-lg mt-4" />
-                <br />list-ul
+                <br />
+                list-ul
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-outdent fa-lg mt-4" />
-                <br />outdent
+                <br />
+                outdent
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paperclip fa-lg mt-4" />
-                <br />paperclip
+                <br />
+                paperclip
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paragraph fa-lg mt-4" />
-                <br />paragraph
+                <br />
+                paragraph
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paste fa-lg mt-4" />
-                <br />paste <span className="text-muted">(alias)</span>
+                <br />
+                paste <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-repeat fa-lg mt-4" />
-                <br />repeat
+                <br />
+                repeat
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rotate-left fa-lg mt-4" />
-                <br />rotate-left <span className="text-muted">(alias)</span>
+                <br />
+                rotate-left <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rotate-right fa-lg mt-4" />
-                <br />rotate-right <span className="text-muted">(alias)</span>
+                <br />
+                rotate-right <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-save fa-lg mt-4" />
-                <br />save <span className="text-muted">(alias)</span>
+                <br />
+                save <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-scissors fa-lg mt-4" />
-                <br />scissors
+                <br />
+                scissors
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-strikethrough fa-lg mt-4" />
-                <br />strikethrough
+                <br />
+                strikethrough
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-subscript fa-lg mt-4" />
-                <br />subscript
+                <br />
+                subscript
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-superscript fa-lg mt-4" />
-                <br />superscript
+                <br />
+                superscript
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-table fa-lg mt-4" />
-                <br />table
+                <br />
+                table
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-text-height fa-lg mt-4" />
-                <br />text-height
+                <br />
+                text-height
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-text-width fa-lg mt-4" />
-                <br />text-width
+                <br />
+                text-width
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-th fa-lg mt-4" />
-                <br />th
+                <br />
+                th
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-th-large fa-lg mt-4" />
-                <br />th-large
+                <br />
+                th-large
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-th-list fa-lg mt-4" />
-                <br />th-list
+                <br />
+                th-list
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-underline fa-lg mt-4" />
-                <br />underline
+                <br />
+                underline
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-undo fa-lg mt-4" />
-                <br />undo
+                <br />
+                undo
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-unlink fa-lg mt-4" />
-                <br />unlink <span className="text-muted">(alias)</span>
+                <br />
+                unlink <span className="text-muted">(alias)</span>
               </Col>
             </Row>
           </CardBody>
@@ -3265,267 +3901,320 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-double-down fa-lg mt-4" />
-                <br />angle-double-down
+                <br />
+                angle-double-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-double-left fa-lg mt-4" />
-                <br />angle-double-left
+                <br />
+                angle-double-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-double-right fa-lg mt-4" />
-                <br />angle-double-right
+                <br />
+                angle-double-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-double-up fa-lg mt-4" />
-                <br />angle-double-up
+                <br />
+                angle-double-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-down fa-lg mt-4" />
-                <br />angle-down
+                <br />
+                angle-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-left fa-lg mt-4" />
-                <br />angle-left
+                <br />
+                angle-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-right fa-lg mt-4" />
-                <br />angle-right
+                <br />
+                angle-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angle-up fa-lg mt-4" />
-                <br />angle-up
+                <br />
+                angle-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-down fa-lg mt-4" />
-                <br />arrow-circle-down
+                <br />
+                arrow-circle-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-left fa-lg mt-4" />
-                <br />arrow-circle-left
+                <br />
+                arrow-circle-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-o-down fa-lg mt-4" />
-                <br />arrow-circle-o-down
+                <br />
+                arrow-circle-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-o-left fa-lg mt-4" />
-                <br />arrow-circle-o-left
+                <br />
+                arrow-circle-o-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-o-right fa-lg mt-4" />
-                <br />arrow-circle-o-right
+                <br />
+                arrow-circle-o-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-o-up fa-lg mt-4" />
-                <br />arrow-circle-o-up
+                <br />
+                arrow-circle-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-right fa-lg mt-4" />
-                <br />arrow-circle-right
+                <br />
+                arrow-circle-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-circle-up fa-lg mt-4" />
-                <br />arrow-circle-up
+                <br />
+                arrow-circle-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-down fa-lg mt-4" />
-                <br />arrow-down
+                <br />
+                arrow-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-left fa-lg mt-4" />
-                <br />arrow-left
+                <br />
+                arrow-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-right fa-lg mt-4" />
-                <br />arrow-right
+                <br />
+                arrow-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrow-up fa-lg mt-4" />
-                <br />arrow-up
+                <br />
+                arrow-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows fa-lg mt-4" />
-                <br />arrows
+                <br />
+                arrows
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-alt fa-lg mt-4" />
-                <br />arrows-alt
+                <br />
+                arrows-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-h fa-lg mt-4" />
-                <br />arrows-h
+                <br />
+                arrows-h
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-v fa-lg mt-4" />
-                <br />arrows-v
+                <br />
+                arrows-v
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-down fa-lg mt-4" />
-                <br />caret-down
+                <br />
+                caret-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-left fa-lg mt-4" />
-                <br />caret-left
+                <br />
+                caret-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-right fa-lg mt-4" />
-                <br />caret-right
+                <br />
+                caret-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-down fa-lg mt-4" />
-                <br />caret-square-o-down
+                <br />
+                caret-square-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-left fa-lg mt-4" />
-                <br />caret-square-o-left
+                <br />
+                caret-square-o-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-right fa-lg mt-4" />
-                <br />caret-square-o-right
+                <br />
+                caret-square-o-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-square-o-up fa-lg mt-4" />
-                <br />caret-square-o-up
+                <br />
+                caret-square-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-caret-up fa-lg mt-4" />
-                <br />caret-up
+                <br />
+                caret-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-circle-down fa-lg mt-4" />
-                <br />chevron-circle-down
+                <br />
+                chevron-circle-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-circle-left fa-lg mt-4" />
-                <br />chevron-circle-left
+                <br />
+                chevron-circle-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-circle-right fa-lg mt-4" />
-                <br />chevron-circle-right
+                <br />
+                chevron-circle-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-circle-up fa-lg mt-4" />
-                <br />chevron-circle-up
+                <br />
+                chevron-circle-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-down fa-lg mt-4" />
-                <br />chevron-down
+                <br />
+                chevron-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-left fa-lg mt-4" />
-                <br />chevron-left
+                <br />
+                chevron-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-right fa-lg mt-4" />
-                <br />chevron-right
+                <br />
+                chevron-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chevron-up fa-lg mt-4" />
-                <br />chevron-up
+                <br />
+                chevron-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-exchange fa-lg mt-4" />
-                <br />exchange
+                <br />
+                exchange
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-down fa-lg mt-4" />
-                <br />hand-o-down
+                <br />
+                hand-o-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-left fa-lg mt-4" />
-                <br />hand-o-left
+                <br />
+                hand-o-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-right fa-lg mt-4" />
-                <br />hand-o-right
+                <br />
+                hand-o-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hand-o-up fa-lg mt-4" />
-                <br />hand-o-up
+                <br />
+                hand-o-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-long-arrow-down fa-lg mt-4" />
-                <br />long-arrow-down
+                <br />
+                long-arrow-down
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-long-arrow-left fa-lg mt-4" />
-                <br />long-arrow-left
+                <br />
+                long-arrow-left
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-long-arrow-right fa-lg mt-4" />
-                <br />long-arrow-right
+                <br />
+                long-arrow-right
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-long-arrow-up fa-lg mt-4" />
-                <br />long-arrow-up
+                <br />
+                long-arrow-up
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-down fa-lg mt-4" />
-                <br />toggle-down <span className="text-muted">(alias)</span>
+                <br />
+                toggle-down <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-left fa-lg mt-4" />
-                <br />toggle-left <span className="text-muted">(alias)</span>
+                <br />
+                toggle-left <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-right fa-lg mt-4" />
-                <br />toggle-right <span className="text-muted">(alias)</span>
+                <br />
+                toggle-right <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-toggle-up fa-lg mt-4" />
-                <br />toggle-up <span className="text-muted">(alias)</span>
+                <br />
+                toggle-up <span className="text-muted">(alias)</span>
               </Col>
             </Row>
           </CardBody>
@@ -3537,107 +4226,128 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-arrows-alt fa-lg mt-4" />
-                <br />arrows-alt
+                <br />
+                arrows-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-backward fa-lg mt-4" />
-                <br />backward
+                <br />
+                backward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-compress fa-lg mt-4" />
-                <br />compress
+                <br />
+                compress
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-eject fa-lg mt-4" />
-                <br />eject
+                <br />
+                eject
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-expand fa-lg mt-4" />
-                <br />expand
+                <br />
+                expand
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fast-backward fa-lg mt-4" />
-                <br />fast-backward
+                <br />
+                fast-backward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fast-forward fa-lg mt-4" />
-                <br />fast-forward
+                <br />
+                fast-forward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-forward fa-lg mt-4" />
-                <br />forward
+                <br />
+                forward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pause fa-lg mt-4" />
-                <br />pause
+                <br />
+                pause
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pause-circle fa-lg mt-4" />
-                <br />pause-circle
+                <br />
+                pause-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pause-circle-o fa-lg mt-4" />
-                <br />pause-circle-o
+                <br />
+                pause-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-play fa-lg mt-4" />
-                <br />play
+                <br />
+                play
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-play-circle fa-lg mt-4" />
-                <br />play-circle
+                <br />
+                play-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-play-circle-o fa-lg mt-4" />
-                <br />play-circle-o
+                <br />
+                play-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-random fa-lg mt-4" />
-                <br />random
+                <br />
+                random
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-step-backward fa-lg mt-4" />
-                <br />step-backward
+                <br />
+                step-backward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-step-forward fa-lg mt-4" />
-                <br />step-forward
+                <br />
+                step-forward
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stop fa-lg mt-4" />
-                <br />stop
+                <br />
+                stop
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stop-circle fa-lg mt-4" />
-                <br />stop-circle
+                <br />
+                stop-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stop-circle-o fa-lg mt-4" />
-                <br />stop-circle-o
+                <br />
+                stop-circle-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-youtube-play fa-lg mt-4" />
-                <br />youtube-play
+                <br />
+                youtube-play
               </Col>
             </Row>
           </CardBody>
@@ -3654,792 +4364,947 @@ class FontAwesome extends React.Component<any, any> {
               their "Remove Social Media Buttons" setting. We will not use hacks
               to force them to display. Please
               <a href="https://adblockplus.org/en/bugs" className="alert-link">
-                {' '}
+                {" "}
                 report an issue with Adblock Plus
-              </a>{' '}
+              </a>{" "}
               if you believe this to be an error. To work around this, you'll
               need to modify the social icon class names.
             </Alert>
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-500px fa-lg mt-4" />
-                <br />500px
+                <br />
+                500px
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-adn fa-lg mt-4" />
-                <br />adn
+                <br />
+                adn
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-amazon fa-lg mt-4" />
-                <br />amazon
+                <br />
+                amazon
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-android fa-lg mt-4" />
-                <br />android
+                <br />
+                android
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-angellist fa-lg mt-4" />
-                <br />angellist
+                <br />
+                angellist
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-apple fa-lg mt-4" />
-                <br />apple
+                <br />
+                apple
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-behance fa-lg mt-4" />
-                <br />behance
+                <br />
+                behance
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-behance-square fa-lg mt-4" />
-                <br />behance-square
+                <br />
+                behance-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bitbucket fa-lg mt-4" />
-                <br />bitbucket
+                <br />
+                bitbucket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bitbucket-square fa-lg mt-4" />
-                <br />bitbucket-square
+                <br />
+                bitbucket-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bitcoin fa-lg mt-4" />
-                <br />bitcoin <span className="text-muted">(alias)</span>
+                <br />
+                bitcoin <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-black-tie fa-lg mt-4" />
-                <br />black-tie
+                <br />
+                black-tie
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth fa-lg mt-4" />
-                <br />bluetooth
+                <br />
+                bluetooth
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-bluetooth-b fa-lg mt-4" />
-                <br />bluetooth-b
+                <br />
+                bluetooth-b
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-btc fa-lg mt-4" />
-                <br />btc
+                <br />
+                btc
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-buysellads fa-lg mt-4" />
-                <br />buysellads
+                <br />
+                buysellads
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-amex fa-lg mt-4" />
-                <br />cc-amex
+                <br />
+                cc-amex
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-diners-club fa-lg mt-4" />
-                <br />cc-diners-club
+                <br />
+                cc-diners-club
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-discover fa-lg mt-4" />
-                <br />cc-discover
+                <br />
+                cc-discover
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-jcb fa-lg mt-4" />
-                <br />cc-jcb
+                <br />
+                cc-jcb
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-mastercard fa-lg mt-4" />
-                <br />cc-mastercard
+                <br />
+                cc-mastercard
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-paypal fa-lg mt-4" />
-                <br />cc-paypal
+                <br />
+                cc-paypal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-stripe fa-lg mt-4" />
-                <br />cc-stripe
+                <br />
+                cc-stripe
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-cc-visa fa-lg mt-4" />
-                <br />cc-visa
+                <br />
+                cc-visa
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-chrome fa-lg mt-4" />
-                <br />chrome
+                <br />
+                chrome
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-codepen fa-lg mt-4" />
-                <br />codepen
+                <br />
+                codepen
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-codiepie fa-lg mt-4" />
-                <br />codiepie
+                <br />
+                codiepie
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-connectdevelop fa-lg mt-4" />
-                <br />connectdevelop
+                <br />
+                connectdevelop
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-contao fa-lg mt-4" />
-                <br />contao
+                <br />
+                contao
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-css3 fa-lg mt-4" />
-                <br />css3
+                <br />
+                css3
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dashcube fa-lg mt-4" />
-                <br />dashcube
+                <br />
+                dashcube
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-delicious fa-lg mt-4" />
-                <br />delicious
+                <br />
+                delicious
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-deviantart fa-lg mt-4" />
-                <br />deviantart
+                <br />
+                deviantart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-digg fa-lg mt-4" />
-                <br />digg
+                <br />
+                digg
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dribbble fa-lg mt-4" />
-                <br />dribbble
+                <br />
+                dribbble
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-dropbox fa-lg mt-4" />
-                <br />dropbox
+                <br />
+                dropbox
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-drupal fa-lg mt-4" />
-                <br />drupal
+                <br />
+                drupal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-edge fa-lg mt-4" />
-                <br />edge
+                <br />
+                edge
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-empire fa-lg mt-4" />
-                <br />empire
+                <br />
+                empire
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-expeditedssl fa-lg mt-4" />
-                <br />expeditedssl
+                <br />
+                expeditedssl
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-facebook fa-lg mt-4" />
-                <br />facebook
+                <br />
+                facebook
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-facebook-f fa-lg mt-4" />
-                <br />facebook-f <span className="text-muted">(alias)</span>
+                <br />
+                facebook-f <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-facebook-official fa-lg mt-4" />
-                <br />facebook-official
+                <br />
+                facebook-official
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-facebook-square fa-lg mt-4" />
-                <br />facebook-square
+                <br />
+                facebook-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-firefox fa-lg mt-4" />
-                <br />firefox
+                <br />
+                firefox
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-flickr fa-lg mt-4" />
-                <br />flickr
+                <br />
+                flickr
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fonticons fa-lg mt-4" />
-                <br />fonticons
+                <br />
+                fonticons
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-fort-awesome fa-lg mt-4" />
-                <br />fort-awesome
+                <br />
+                fort-awesome
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-forumbee fa-lg mt-4" />
-                <br />forumbee
+                <br />
+                forumbee
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-foursquare fa-lg mt-4" />
-                <br />foursquare
+                <br />
+                foursquare
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ge fa-lg mt-4" />
-                <br />ge <span className="text-muted">(alias)</span>
+                <br />
+                ge <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-get-pocket fa-lg mt-4" />
-                <br />get-pocket
+                <br />
+                get-pocket
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gg fa-lg mt-4" />
-                <br />gg
+                <br />
+                gg
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gg-circle fa-lg mt-4" />
-                <br />gg-circle
+                <br />
+                gg-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-git fa-lg mt-4" />
-                <br />git
+                <br />
+                git
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-git-square fa-lg mt-4" />
-                <br />git-square
+                <br />
+                git-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-github fa-lg mt-4" />
-                <br />github
+                <br />
+                github
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-github-alt fa-lg mt-4" />
-                <br />github-alt
+                <br />
+                github-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-github-square fa-lg mt-4" />
-                <br />github-square
+                <br />
+                github-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gittip fa-lg mt-4" />
-                <br />gittip <span className="text-muted">(alias)</span>
+                <br />
+                gittip <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-google fa-lg mt-4" />
-                <br />google
+                <br />
+                google
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-google-plus fa-lg mt-4" />
-                <br />google-plus
+                <br />
+                google-plus
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-google-plus-square fa-lg mt-4" />
-                <br />google-plus-square
+                <br />
+                google-plus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-google-wallet fa-lg mt-4" />
-                <br />google-wallet
+                <br />
+                google-wallet
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-gratipay fa-lg mt-4" />
-                <br />gratipay
+                <br />
+                gratipay
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hacker-news fa-lg mt-4" />
-                <br />hacker-news
+                <br />
+                hacker-news
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-houzz fa-lg mt-4" />
-                <br />houzz
+                <br />
+                houzz
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-html5 fa-lg mt-4" />
-                <br />html5
+                <br />
+                html5
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-instagram fa-lg mt-4" />
-                <br />instagram
+                <br />
+                instagram
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-internet-explorer fa-lg mt-4" />
-                <br />internet-explorer
+                <br />
+                internet-explorer
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ioxhost fa-lg mt-4" />
-                <br />ioxhost
+                <br />
+                ioxhost
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-joomla fa-lg mt-4" />
-                <br />joomla
+                <br />
+                joomla
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-jsfiddle fa-lg mt-4" />
-                <br />jsfiddle
+                <br />
+                jsfiddle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-lastfm fa-lg mt-4" />
-                <br />lastfm
+                <br />
+                lastfm
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-lastfm-square fa-lg mt-4" />
-                <br />lastfm-square
+                <br />
+                lastfm-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-leanpub fa-lg mt-4" />
-                <br />leanpub
+                <br />
+                leanpub
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-linkedin fa-lg mt-4" />
-                <br />linkedin
+                <br />
+                linkedin
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-linkedin-square fa-lg mt-4" />
-                <br />linkedin-square
+                <br />
+                linkedin-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-linux fa-lg mt-4" />
-                <br />linux
+                <br />
+                linux
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-maxcdn fa-lg mt-4" />
-                <br />maxcdn
+                <br />
+                maxcdn
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-meanpath fa-lg mt-4" />
-                <br />meanpath
+                <br />
+                meanpath
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-medium fa-lg mt-4" />
-                <br />medium
+                <br />
+                medium
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-mixcloud fa-lg mt-4" />
-                <br />mixcloud
+                <br />
+                mixcloud
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-modx fa-lg mt-4" />
-                <br />modx
+                <br />
+                modx
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-odnoklassniki fa-lg mt-4" />
-                <br />odnoklassniki
+                <br />
+                odnoklassniki
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-odnoklassniki-square fa-lg mt-4" />
-                <br />odnoklassniki-square
+                <br />
+                odnoklassniki-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-opencart fa-lg mt-4" />
-                <br />opencart
+                <br />
+                opencart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-openid fa-lg mt-4" />
-                <br />openid
+                <br />
+                openid
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-opera fa-lg mt-4" />
-                <br />opera
+                <br />
+                opera
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-optin-monster fa-lg mt-4" />
-                <br />optin-monster
+                <br />
+                optin-monster
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pagelines fa-lg mt-4" />
-                <br />pagelines
+                <br />
+                pagelines
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-paypal fa-lg mt-4" />
-                <br />paypal
+                <br />
+                paypal
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pied-piper fa-lg mt-4" />
-                <br />pied-piper
+                <br />
+                pied-piper
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pied-piper-alt fa-lg mt-4" />
-                <br />pied-piper-alt
+                <br />
+                pied-piper-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pinterest fa-lg mt-4" />
-                <br />pinterest
+                <br />
+                pinterest
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pinterest-p fa-lg mt-4" />
-                <br />pinterest-p
+                <br />
+                pinterest-p
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-pinterest-square fa-lg mt-4" />
-                <br />pinterest-square
+                <br />
+                pinterest-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-product-hunt fa-lg mt-4" />
-                <br />product-hunt
+                <br />
+                product-hunt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-qq fa-lg mt-4" />
-                <br />qq
+                <br />
+                qq
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ra fa-lg mt-4" />
-                <br />ra <span className="text-muted">(alias)</span>
+                <br />
+                ra <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-rebel fa-lg mt-4" />
-                <br />rebel
+                <br />
+                rebel
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reddit fa-lg mt-4" />
-                <br />reddit
+                <br />
+                reddit
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reddit-alien fa-lg mt-4" />
-                <br />reddit-alien
+                <br />
+                reddit-alien
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-reddit-square fa-lg mt-4" />
-                <br />reddit-square
+                <br />
+                reddit-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-renren fa-lg mt-4" />
-                <br />renren
+                <br />
+                renren
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-safari fa-lg mt-4" />
-                <br />safari
+                <br />
+                safari
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-scribd fa-lg mt-4" />
-                <br />scribd
+                <br />
+                scribd
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-sellsy fa-lg mt-4" />
-                <br />sellsy
+                <br />
+                sellsy
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-alt fa-lg mt-4" />
-                <br />share-alt
+                <br />
+                share-alt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-share-alt-square fa-lg mt-4" />
-                <br />share-alt-square
+                <br />
+                share-alt-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-shirtsinbulk fa-lg mt-4" />
-                <br />shirtsinbulk
+                <br />
+                shirtsinbulk
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-simplybuilt fa-lg mt-4" />
-                <br />simplybuilt
+                <br />
+                simplybuilt
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-skyatlas fa-lg mt-4" />
-                <br />skyatlas
+                <br />
+                skyatlas
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-skype fa-lg mt-4" />
-                <br />skype
+                <br />
+                skype
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-slack fa-lg mt-4" />
-                <br />slack
+                <br />
+                slack
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-slideshare fa-lg mt-4" />
-                <br />slideshare
+                <br />
+                slideshare
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-soundcloud fa-lg mt-4" />
-                <br />soundcloud
+                <br />
+                soundcloud
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-spotify fa-lg mt-4" />
-                <br />spotify
+                <br />
+                spotify
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stack-exchange fa-lg mt-4" />
-                <br />stack-exchange
+                <br />
+                stack-exchange
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stack-overflow fa-lg mt-4" />
-                <br />stack-overflow
+                <br />
+                stack-overflow
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-steam fa-lg mt-4" />
-                <br />steam
+                <br />
+                steam
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-steam-square fa-lg mt-4" />
-                <br />steam-square
+                <br />
+                steam-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stumbleupon fa-lg mt-4" />
-                <br />stumbleupon
+                <br />
+                stumbleupon
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stumbleupon-circle fa-lg mt-4" />
-                <br />stumbleupon-circle
+                <br />
+                stumbleupon-circle
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tencent-weibo fa-lg mt-4" />
-                <br />tencent-weibo
+                <br />
+                tencent-weibo
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-trello fa-lg mt-4" />
-                <br />trello
+                <br />
+                trello
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tripadvisor fa-lg mt-4" />
-                <br />tripadvisor
+                <br />
+                tripadvisor
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tumblr fa-lg mt-4" />
-                <br />tumblr
+                <br />
+                tumblr
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-tumblr-square fa-lg mt-4" />
-                <br />tumblr-square
+                <br />
+                tumblr-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-twitch fa-lg mt-4" />
-                <br />twitch
+                <br />
+                twitch
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-twitter fa-lg mt-4" />
-                <br />twitter
+                <br />
+                twitter
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-twitter-square fa-lg mt-4" />
-                <br />twitter-square
+                <br />
+                twitter-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-usb fa-lg mt-4" />
-                <br />usb
+                <br />
+                usb
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-viacoin fa-lg mt-4" />
-                <br />viacoin
+                <br />
+                viacoin
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vimeo fa-lg mt-4" />
-                <br />vimeo
+                <br />
+                vimeo
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vimeo-square fa-lg mt-4" />
-                <br />vimeo-square
+                <br />
+                vimeo-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vine fa-lg mt-4" />
-                <br />vine
+                <br />
+                vine
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-vk fa-lg mt-4" />
-                <br />vk
+                <br />
+                vk
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wechat fa-lg mt-4" />
-                <br />wechat <span className="text-muted">(alias)</span>
+                <br />
+                wechat <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-weibo fa-lg mt-4" />
-                <br />weibo
+                <br />
+                weibo
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-weixin fa-lg mt-4" />
-                <br />weixin
+                <br />
+                weixin
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-whatsapp fa-lg mt-4" />
-                <br />whatsapp
+                <br />
+                whatsapp
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wikipedia-w fa-lg mt-4" />
-                <br />wikipedia-w
+                <br />
+                wikipedia-w
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-windows fa-lg mt-4" />
-                <br />windows
+                <br />
+                windows
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wordpress fa-lg mt-4" />
-                <br />wordpress
+                <br />
+                wordpress
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-xing fa-lg mt-4" />
-                <br />xing
+                <br />
+                xing
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-xing-square fa-lg mt-4" />
-                <br />xing-square
+                <br />
+                xing-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-y-combinator fa-lg mt-4" />
-                <br />y-combinator
+                <br />
+                y-combinator
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-y-combinator-square fa-lg mt-4" />
-                <br />y-combinator-square{' '}
-                <span className="text-muted">(alias)</span>
+                <br />
+                y-combinator-square <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-yahoo fa-lg mt-4" />
-                <br />yahoo
+                <br />
+                yahoo
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-yc fa-lg mt-4" />
-                <br />yc <span className="text-muted">(alias)</span>
+                <br />
+                yc <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-yc-square fa-lg mt-4" />
-                <br />yc-square <span className="text-muted">(alias)</span>
+                <br />
+                yc-square <span className="text-muted">(alias)</span>
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-yelp fa-lg mt-4" />
-                <br />yelp
+                <br />
+                yelp
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-youtube fa-lg mt-4" />
-                <br />youtube
+                <br />
+                youtube
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-youtube-play fa-lg mt-4" />
-                <br />youtube-play
+                <br />
+                youtube-play
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-youtube-square fa-lg mt-4" />
-                <br />youtube-square
+                <br />
+                youtube-square
               </Col>
             </Row>
             <Alert color="success" className="mt-4">
@@ -4466,57 +5331,68 @@ class FontAwesome extends React.Component<any, any> {
             <Row className="text-center">
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-ambulance fa-lg mt-4" />
-                <br />ambulance
+                <br />
+                ambulance
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-h-square fa-lg mt-4" />
-                <br />h-square
+                <br />
+                h-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heart fa-lg mt-4" />
-                <br />heart
+                <br />
+                heart
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heart-o fa-lg mt-4" />
-                <br />heart-o
+                <br />
+                heart-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-heartbeat fa-lg mt-4" />
-                <br />heartbeat
+                <br />
+                heartbeat
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-hospital-o fa-lg mt-4" />
-                <br />hospital-o
+                <br />
+                hospital-o
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-medkit fa-lg mt-4" />
-                <br />medkit
+                <br />
+                medkit
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-plus-square fa-lg mt-4" />
-                <br />plus-square
+                <br />
+                plus-square
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-stethoscope fa-lg mt-4" />
-                <br />stethoscope
+                <br />
+                stethoscope
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-user-md fa-lg mt-4" />
-                <br />user-md
+                <br />
+                user-md
               </Col>
 
               <Col xs="6" sm="4" md="3" lg="2">
                 <i className="fa fa-wheelchair fa-lg mt-4" />
-                <br />wheelchair
+                <br />
+                wheelchair
               </Col>
             </Row>
           </CardBody>
