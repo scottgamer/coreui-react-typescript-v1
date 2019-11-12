@@ -5,7 +5,6 @@ import {
   Col,
   Card,
   CardBody,
-  CardFooter,
   Button,
   Input,
   InputGroup,
@@ -13,6 +12,72 @@ import {
 } from "reactstrap";
 
 const Register: React.FC = () => {
+  const inputsProps: any = [
+    {
+      group: {
+        className: "mb-3"
+      },
+      addonType: "prepend",
+      icon: {
+        className: "icon-user"
+      },
+      input: {
+        type: "text",
+        placeholder: "Nombre de usuario"
+      }
+    },
+    {
+      group: {
+        className: "mb-3"
+      },
+      addonType: "prepend",
+      icon: {
+        className: "fa fa-envelope-o"
+      },
+      input: {
+        type: "text",
+        placeholder: "Correo electrónico"
+      }
+    },
+    {
+      group: {
+        className: "mb-3"
+      },
+      addonType: "prepend",
+      icon: {
+        className: "icon-lock"
+      },
+      input: {
+        type: "password",
+        placeholder: "Contraseña"
+      }
+    },
+    {
+      group: {
+        className: "mb-3"
+      },
+      addonType: "prepend",
+      icon: {
+        className: "icon-lock"
+      },
+      input: {
+        type: "password",
+        placeholder: "Repetir contraseña"
+      }
+    }
+  ];
+
+  const inputs = inputsProps.map((input: any) => {
+    return (
+      <InputGroup className={input.group.className}>
+        <InputGroupAddon addonType={input.addonType}>
+          <i className={input.icon.className} />
+        </InputGroupAddon>
+        <Input type={input.input.type} placeholder={input.input.placeholder} />
+      </InputGroup>
+    );
+  });
+
   return (
     <div className="app flex-row align-items-center">
       <Container>
@@ -20,48 +85,15 @@ const Register: React.FC = () => {
           <Col md="6">
             <Card className="mx-4">
               <CardBody className="p-4">
-                <h1>Register</h1>
-                <p className="text-muted">Create your account</p>
-                <InputGroup className="mb-3">
-                  <InputGroupAddon addonType="prepend">
-                    <i className="icon-user" />
-                  </InputGroupAddon>
-                  <Input type="text" placeholder="Username" />
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-                  <Input type="text" placeholder="Email" />
-                </InputGroup>
-                <InputGroup className="mb-3">
-                  <InputGroupAddon addonType="prepend">
-                    <i className="icon-lock" />
-                  </InputGroupAddon>
-                  <Input type="password" placeholder="Password" />
-                </InputGroup>
-                <InputGroup className="mb-4">
-                  <InputGroupAddon addonType="prepend">
-                    <i className="icon-lock" />
-                  </InputGroupAddon>
-                  <Input type="password" placeholder="Repeat password" />
-                </InputGroup>
+                <h1>Regístrate</h1>
+                <p className="text-muted">Crea tu cuenta</p>
+
+                {inputs}
+
                 <Button color="success" block>
-                  Create Account
+                  Crear Cuenta
                 </Button>
               </CardBody>
-              <CardFooter className="p-4">
-                <Row>
-                  <Col xs="12" sm="6">
-                    <Button className="btn-facebook" block>
-                      <span>facebook</span>
-                    </Button>
-                  </Col>
-                  <Col xs="12" sm="6">
-                    <Button className="btn-twitter" block>
-                      <span>twitter</span>
-                    </Button>
-                  </Col>
-                </Row>
-              </CardFooter>
             </Card>
           </Col>
         </Row>
