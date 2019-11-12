@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import {
   Button,
   Modal as RsModal,
@@ -7,38 +8,32 @@ import {
   ModalFooter
 } from "reactstrap";
 
-// TODO: test modal component
-
 const Modal: React.FC<any> = props => {
-  const [modal, setModal] = useState({
-    isOpen: false
-  });
-
-  const toggleHandler = () => {
-    const prevModal = { ...modal };
-    setModal({ ...prevModal, isOpen: !prevModal.isOpen });
-  };
-
   return (
-    <div>
-      <RsModal
-        isOpen={modal.isOpen}
-        toggle={toggleHandler}
-        className={"modal-danger " + props.className}
-      >
-        <ModalHeader toggle={toggleHandler}>{props.title}</ModalHeader>
-        <ModalBody>{props.body}</ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggleHandler}>
-            Do Something
-          </Button>{" "}
-          <Button color="secondary" onClick={toggleHandler}>
-            Cancel
-          </Button>
-        </ModalFooter>
-      </RsModal>
-    </div>
+    <RsModal
+      isOpen={props.isOpen}
+      toggle={props.toggleHandler}
+      className={"modal-danger " + props.className}
+    >
+      <ModalHeader toggle={props.toggleHandler}>{props.title}</ModalHeader>
+      <ModalBody>{props.body}</ModalBody>
+      <ModalFooter>
+        <Button color="primary" onClick={props.toggleHandler}>
+          Aceptar
+        </Button>{" "}
+        <Button color="secondary" onClick={props.toggleHandler}>
+          Cancelar
+        </Button>
+      </ModalFooter>
+    </RsModal>
   );
+};
+
+Modal.propTypes = {
+  isOpen: PropTypes.bool,
+  toggleHandler: PropTypes.func,
+  title: PropTypes.string,
+  body: PropTypes.string,
 };
 
 export default Modal;
