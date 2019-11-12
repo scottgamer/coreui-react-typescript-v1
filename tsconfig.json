@@ -15,7 +15,7 @@
     "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false, // fixes the compilation error on warning event
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
