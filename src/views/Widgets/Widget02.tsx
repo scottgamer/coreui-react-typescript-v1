@@ -39,11 +39,9 @@ const Widget02: React.FC<any> = props => {
   const lead = { style: "h5 mb-0", color, classes: "" };
   lead.classes = classNames(lead.style, "text-" + card.color, padding.lead);
 
-  // FIX: shadowed name
-
-  const blockIcon = icon => {
+  const blockIcon = (iconBlock: any) => {
     const classes = classNames(
-      icon,
+      iconBlock,
       "bg-" + card.color,
       padding.icon,
       "font-2xl mr-3 float-left"
