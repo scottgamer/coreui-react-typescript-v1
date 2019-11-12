@@ -1,19 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import {
+  Button,
   Container,
-  Row,
   Col,
   Card,
   CardBody,
-  Button,
+  Form,
   Input,
   InputGroup,
-  InputGroupAddon
+  InputGroupAddon,
+  Row
 } from "reactstrap";
 
+import axios from "axios";
+import config from "../../../config";
+
 const Register: React.FC = () => {
+  const [register, setRegister] = useState({
+    username: "",
+    email: "",
+    password: "",
+    isPasswordValid: false,
+    role: "",
+    isRegisteredSucessful: false
+  });
+
+  const registerHandler = async () => {
+    try {
+      const response = await axios.post(
+        `${config.BACKEND_HOST_URL}/api/v1/auth/register`,
+        register,
+        {
+          headers: { "Content-Type": "application/json" }
+        }
+      );
+
+      if (response) {
+        // TODO: make redirect to dashboard
+        console.log(response);
+      }
+    } catch (error) {
+      console.log(error);
+      // TODO: handle error in modal
+    }
+  };
+
   const inputsProps: any = [
     {
+      id: 1,
       group: {
         className: "mb-3"
       },
@@ -27,6 +61,7 @@ const Register: React.FC = () => {
       }
     },
     {
+      id: 2,
       group: {
         className: "mb-3"
       },
@@ -40,6 +75,7 @@ const Register: React.FC = () => {
       }
     },
     {
+      id: 3,
       group: {
         className: "mb-3"
       },
@@ -53,6 +89,7 @@ const Register: React.FC = () => {
       }
     },
     {
+      id: 4,
       group: {
         className: "mb-3"
       },
@@ -69,7 +106,7 @@ const Register: React.FC = () => {
 
   const inputs = inputsProps.map((input: any) => {
     return (
-      <InputGroup className={input.group.className}>
+      <InputGroup key={input.id} className={input.group.className}>
         <InputGroupAddon addonType={input.addonType}>
           <i className={input.icon.className} />
         </InputGroupAddon>
@@ -79,26 +116,28 @@ const Register: React.FC = () => {
   });
 
   return (
-    <div className="app flex-row align-items-center">
-      <Container>
-        <Row className="justify-content-center">
-          <Col md="6">
-            <Card className="mx-4">
-              <CardBody className="p-4">
-                <h1>Regístrate</h1>
-                <p className="text-muted">Crea tu cuenta</p>
+    <Form onSubmit={registerHandler}>
+      <div className="app flex-row align-items-center">
+        <Container>
+          <Row className="justify-content-center">
+            <Col md="6">
+              <Card className="mx-4">
+                <CardBody className="p-4">
+                  <h1>Regístrate</h1>
+                  <p className="text-muted">Crea tu cuenta</p>
 
-                {inputs}
+                  {inputs}
 
-                <Button color="success" block>
-                  Crear Cuenta
-                </Button>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+                  <Button color="success" block>
+                    Crear Cuenta
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Form>
   );
 };
 
