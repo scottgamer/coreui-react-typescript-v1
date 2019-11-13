@@ -10,7 +10,7 @@
     "history": "4.7.2",
     "preload-webpack-plugin": "^2.3.0",
     "react": "^16.11.0",
-    "react-chartjs-2": "2.6.4",
+    "react-chartjs-2": "^2.8.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-transition-group": "2.2.1",
@@ -23,7 +23,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "@types/chart.js": "^2.8.10",
+    "@types/chart.js": "^2.8.11",
     "@types/classnames": "^2.2.9",
     "@types/jest": "^22.0.1",
     "@types/node": "^8.5.7",
