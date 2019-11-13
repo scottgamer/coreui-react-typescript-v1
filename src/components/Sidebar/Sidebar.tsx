@@ -56,8 +56,8 @@ const Sidebar: React.FC = props => {
     );
   };
 
-  const navListDivider = (divider: any, key: number) => {
-    const classes = classNames("divider", divider.class);
+  const navListDivider = (item: any, key: number) => {
+    const classes = classNames("divider", item.class);
     return <li key={key} className={classes} />;
   };
 
