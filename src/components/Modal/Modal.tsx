@@ -33,7 +33,7 @@ Modal.propTypes = {
   isOpen: PropTypes.bool,
   toggleHandler: PropTypes.func,
   title: PropTypes.string,
-  body: PropTypes.string,
+  body: PropTypes.string
 };
 
 export default Modal;

@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
 // TODO: add form validation
 // import useForm from "react-hook-form";
 
-/** Notice: Do not use InputGroupAddon, style conflicts with scss
- *  Use div with className instead
- */
 import {
   Button,
   Container,
@@ -17,17 +15,20 @@ import {
   InputGroup,
   Row
 } from "reactstrap";
-
-import Modal from "../../../components/Modal";
-
 import axios from "axios";
 import config from "../../../config/";
-import { Redirect } from "react-router";
+import Full from "../../../containers/Full";
+import Modal from "../../../components/Modal";
 
 const Login: React.FC = () => {
   const [login, setLogin] = useState({
     username: "",
-    password: "",
+    password: ""
+  });
+
+  const [user, setUser] = useState({
+    token: "",
+    expiresIn: "",
     isLoggedIn: false
   });
 
@@ -40,27 +41,25 @@ const Login: React.FC = () => {
 
   // const { register, handleSubmit, errors } = useForm();
 
-  const toggleHandler = () => {
-    const prevModal = { ...modal };
-    setModal({ ...prevModal, isOpen: !prevModal.isOpen });
-  };
+  const toggleHandler = () => setModal({ ...modal, isOpen: !modal.isOpen });
 
   // TODO: finish login handler
   const loginHandler = async () => {
     try {
       const response = await axios.post(
-        `${config.BACKEND_HOST_URL}/api/v1/auth/logins`,
+        `${config.BACKEND_HOST_URL}/api/v1/auth/login`,
         login,
         {
           headers: { "Content-Type": "application/json" }
         }
       );
-
-      if (response) {
-        // TODO: make redirect to dashboard
-        console.log(response);
-        setRedirect(true);
-      }
+      const { token, expiresIn } = response.data;
+      setUser({
+        token,
+        expiresIn,
+        isLoggedIn: true
+      });
+      setRedirect(true);
     } catch (error) {
       console.log(error);
       setModal({
@@ -73,13 +72,17 @@ const Login: React.FC = () => {
 
   const inputHandler = (e: any) => {
     e.preventDefault();
-    const updatedLogin = { ...login };
     const { name, value } = e.target;
-    setLogin({ ...updatedLogin, [name]: value });
+    setLogin({ ...login, [name]: value });
   };
 
-  if (redirect) {
-    return <Redirect to="/#/dashboard" />;
+  if (redirect && user.isLoggedIn) {
+    return (
+      <Switch>
+        <Route path="/dashboard" component={Full} />
+        <Redirect to="/dashboard" />
+      </Switch>
+    );
   }
 
   return (
@@ -123,11 +126,7 @@ const Login: React.FC = () => {
                     </InputGroup>
                     <Row>
                       <Col xs="6">
-                        <Button
-                          onClick={toggleHandler}
-                          color="primary"
-                          className="px-4"
-                        >
+                        <Button color="primary" className="px-4">
                           Ingresar
                         </Button>
                         <Modal
