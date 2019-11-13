@@ -18,6 +18,8 @@ import Modal from "../../../components/Modal/";
 import axios from "axios";
 import config from "../../../config";
 
+// TODO: add form validation
+
 const Register: React.FC = () => {
   const [register, setRegister] = useState({
     username: "",
@@ -60,6 +62,7 @@ const Register: React.FC = () => {
         setRedirect(true);
       }
     } catch (error) {
+      console.log(error);
       const errorvalue = error.response.data.message[0].value;
       setModal({
         isOpen: true,
@@ -175,7 +178,7 @@ const Register: React.FC = () => {
 
                   {inputs}
 
-                  <Button color="success" block>
+                  <Button color="primary" block>
                     Crear Cuenta
                   </Button>
                   <Modal {...modal} toggleHandler={toggleHandler} />
@@ -194,8 +197,8 @@ const Register: React.FC = () => {
     return (
       <HashRouter>
         <Switch>
-          <Redirect to="/dashboard" />
-          <Route path="/dashboard" component={Full} />
+          <Redirect to="/#/dashboard" />
+          <Route path="/#/dashboard" component={Full} />
         </Switch>
       </HashRouter>
     );
