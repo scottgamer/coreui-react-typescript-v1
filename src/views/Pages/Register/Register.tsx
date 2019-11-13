@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { HashRouter, Switch, Redirect, Route } from "react-router-dom";
+
+/** Notice: Do not use InputGroupAddon, style conflicts with scss
+ *  Use div with className instead
+ */
 import {
   Button,
   Container,
@@ -9,7 +13,6 @@ import {
   Form,
   Input,
   InputGroup,
-  InputGroupAddon,
   Row
 } from "reactstrap";
 import Full from "../../../containers/Full/";
@@ -92,7 +95,6 @@ const Register: React.FC = () => {
       group: {
         className: "mb-3"
       },
-      addonType: "prepend",
       icon: {
         className: "icon-user"
       },
@@ -107,7 +109,6 @@ const Register: React.FC = () => {
       group: {
         className: "mb-3"
       },
-      addonType: "prepend",
       icon: {
         className: "fa fa-envelope-o"
       },
@@ -122,7 +123,6 @@ const Register: React.FC = () => {
       group: {
         className: "mb-3"
       },
-      addonType: "prepend",
       icon: {
         className: "icon-lock"
       },
@@ -137,7 +137,6 @@ const Register: React.FC = () => {
       group: {
         className: "mb-3"
       },
-      addonType: "prepend",
       icon: {
         className: "icon-lock"
       },
@@ -152,9 +151,9 @@ const Register: React.FC = () => {
   const inputs = inputsProps.map((input: any) => {
     return (
       <InputGroup key={input.id} className={input.group.className}>
-        <InputGroupAddon addonType={input.addonType}>
+        <div className="input-group-addon">
           <i className={input.icon.className} />
-        </InputGroupAddon>
+        </div>
         <Input
           type={input.input.type}
           placeholder={input.input.placeholder}

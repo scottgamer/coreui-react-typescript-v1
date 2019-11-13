@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 // TODO: add form validation
 // import useForm from "react-hook-form";
+
+/** Notice: Do not use InputGroupAddon, style conflicts with scss
+ *  Use div with className instead
+ */
 import {
   Button,
   Container,
@@ -11,7 +15,6 @@ import {
   Form,
   Input,
   InputGroup,
-  InputGroupAddon,
   Row
 } from "reactstrap";
 
@@ -94,9 +97,9 @@ const Login: React.FC = () => {
                       Ingresa tus credenciales de acceso
                     </p>
                     <InputGroup className="mb-3">
-                      <InputGroupAddon addonType="prepend">
+                      <div className="input-group-addon">
                         <i className="icon-user" />
-                      </InputGroupAddon>
+                      </div>
                       <Input
                         type="text"
                         placeholder="Usuario"
@@ -108,9 +111,9 @@ const Login: React.FC = () => {
                       {/* {errors.username && <p>Field is required</p>} */}
                     </InputGroup>
                     <InputGroup className="mb-4">
-                      <InputGroupAddon addonType="prepend">
+                      <div className="input-group-addon">
                         <i className="icon-lock" />
-                      </InputGroupAddon>
+                      </div>
                       <Input
                         type="password"
                         placeholder="Contraseña"
