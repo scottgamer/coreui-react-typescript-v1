@@ -19,6 +19,7 @@ import Modal from "../../../components/Modal";
 
 import axios from "axios";
 import config from "../../../config/";
+import { Redirect } from "react-router";
 
 const Login: React.FC = () => {
   const [login, setLogin] = useState({
@@ -27,27 +28,19 @@ const Login: React.FC = () => {
     isLoggedIn: false
   });
 
+  const [redirect, setRedirect] = useState(false);
   const [modal, setModal] = useState({
     isOpen: false,
     title: "",
     body: ""
   });
 
-  const [errorState, setErrorState] = useState({
-    flag: false
-  });
-
   // const { register, handleSubmit, errors } = useForm();
 
   const toggleHandler = () => {
-    console.log(modal);
-    setModal({ ...modal, isOpen: !modal.isOpen });
+    const prevModal = { ...modal };
+    setModal({ ...prevModal, isOpen: !prevModal.isOpen });
   };
-
-  // const toggleHandler = () => {
-  //   const prevModal = { ...modal };
-  //   setModal({ ...prevModal, isOpen: !prevModal.isOpen });
-  // };
 
   // TODO: finish login handler
   const loginHandler = async () => {
@@ -63,32 +56,15 @@ const Login: React.FC = () => {
       if (response) {
         // TODO: make redirect to dashboard
         console.log(response);
+        setRedirect(true);
       }
     } catch (error) {
       console.log(error);
-      setErrorState({ flag: true });
       setModal({
         isOpen: true,
-        title: "Validation error",
-        body: error
+        title: "Error Message",
+        body: "Server Error"
       });
-
-      // TODO: handle error in modal
-
-      // return (
-      //   <Modal isOpen={error.isOpen}>
-      //     <ModalHeader>{error.header}</ModalHeader>
-      //     <ModalBody>{error.message}</ModalBody>
-      //     <ModalFooter>
-      //       <Button color="primary" onClick={toggle}>
-      //         Do Something
-      //       </Button>{" "}
-      //       <Button color="secondary" onClick={toggle}>
-      //         Cancel
-      //       </Button>
-      //     </ModalFooter>
-      //   </Modal>
-      // );
     }
   };
 
@@ -98,6 +74,10 @@ const Login: React.FC = () => {
     const { name, value } = e.target;
     setLogin({ ...updatedLogin, [name]: value });
   };
+
+  if (redirect) {
+    return <Redirect to="/#/dashboard" />;
+  }
 
   return (
     // <Form onSubmit={handleSubmit(loginHandler)}>
@@ -145,7 +125,7 @@ const Login: React.FC = () => {
                           color="primary"
                           className="px-4"
                         >
-                          Login
+                          Ingresar
                         </Button>
                         <Modal
                           isOpen={modal.isOpen}
@@ -156,7 +136,7 @@ const Login: React.FC = () => {
                       </Col>
                       <Col xs="6" className="text-right">
                         <Button color="link" className="px-0">
-                          Forgot password?
+                          Contraseña olvidada?
                         </Button>
                       </Col>
                     </Row>
@@ -168,14 +148,10 @@ const Login: React.FC = () => {
                 >
                   <CardBody className="text-center">
                     <div>
-                      <h2>Sign up</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
-                      </p>
+                      <h2>Regístrate</h2>
+                      <p>Crea una cuenta para poder ingresar al sistema</p>
                       <Button color="primary" className="mt-3" active>
-                        Ingresar!
+                        Registrarse
                       </Button>
                     </div>
                   </CardBody>
