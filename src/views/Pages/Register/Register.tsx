@@ -113,7 +113,7 @@ const Register: React.FC = () => {
         className: "fa fa-envelope-o"
       },
       input: {
-        type: "text",
+        type: "email",
         placeholder: "Correo electrónico",
         name: "email"
       }
