@@ -14,7 +14,7 @@
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-transition-group": "2.2.1",
-    "reactstrap": "^5.0.0-alpha.4",
+    "reactstrap": "^8.1.1",
     "simple-line-icons": "2.4.1"
   },
   "scripts": {
