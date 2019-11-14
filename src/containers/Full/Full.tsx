@@ -8,6 +8,7 @@ import Breadcrumb from "../../components/Breadcrumb/";
 import Aside from "../../components/Aside/";
 import Footer from "../../components/Footer/";
 import Dashboard from "../../views/Dashboard/";
+import Users from "../../views/Users/";
 import Charts from "../../views/Charts/";
 import Widgets from "../../views/Widgets/";
 
@@ -36,16 +37,23 @@ const Full: React.FC = props => {
           <Container fluid={true}>
             <Switch>
               <Route path="/dashboard" component={Dashboard} />
+              <Route path="/users" component={Users} />
               <Route path="/components/buttons" component={Buttons} />
               <Route path="/components/cards" component={Cards} />
               <Route path="/components/forms" component={Forms} />
               <Route path="/components/modals" component={Modals} />
-              <Route path="/components/social-buttons" component={SocialButtons} />
+              <Route
+                path="/components/social-buttons"
+                component={SocialButtons}
+              />
               <Route path="/components/switches" component={Switches} />
               <Route path="/components/tables" component={Tables} />
               <Route path="/components/tabs" component={Tabs} />
               <Route path="/icons/font-awesome" component={FontAwesome} />
-              <Route path="/icons/simple-line-icons" component={SimpleLineIcons} />
+              <Route
+                path="/icons/simple-line-icons"
+                component={SimpleLineIcons}
+              />
               <Route path="/widgets" component={Widgets} />
               <Route path="/charts" component={Charts} />
               <Redirect from="/" to="/dashboard" />

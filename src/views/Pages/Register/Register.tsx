@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { HashRouter, Switch, Redirect, Route } from "react-router-dom";
-
 /** Notice: Do not use InputGroupAddon, style conflicts with scss
  *  Use div with className instead
  */
+
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import {
   Button,
   Container,
@@ -15,9 +15,7 @@ import {
   InputGroup,
   Row
 } from "reactstrap";
-import Full from "../../../containers/Full/";
 import Modal from "../../../components/Modal/";
-
 import axios from "axios";
 import config from "../../../config";
 
@@ -34,7 +32,8 @@ const Register: React.FC = () => {
     isRegisteredSucessful: false
   });
 
-  const [redirect, setRedirect] = useState(false);
+  const [isPasswordValid, setPasswordValid] = useState(false);
+  const [isSubmitted, setSubmitted] = useState(false);
   const [modal, setModal] = useState({
     isOpen: false,
     title: "",
@@ -60,9 +59,8 @@ const Register: React.FC = () => {
       );
 
       if (response) {
-        // TODO: make redirect to dashboard
         console.log(response);
-        setRedirect(true);
+        setSubmitted(true);
       }
     } catch (error) {
       console.log(error);
@@ -164,8 +162,15 @@ const Register: React.FC = () => {
     );
   });
 
-  const form = (
+  let redirect: any = null;
+
+  if (isSubmitted) {
+    redirect = <Redirect to="/dashboard" />;
+  }
+
+  return (
     <div className="app flex-row align-items-center">
+      {redirect}
       <Container>
         <Form onSubmit={registerHandler}>
           <Row className="justify-content-center">
@@ -174,9 +179,7 @@ const Register: React.FC = () => {
                 <CardBody className="p-4">
                   <h1>Regístrate</h1>
                   <p className="text-muted">Crea tu cuenta</p>
-
                   {inputs}
-
                   <Button color="primary" block>
                     Crear Cuenta
                   </Button>
@@ -189,21 +192,6 @@ const Register: React.FC = () => {
       </Container>
     </div>
   );
-
-  // Fix: redirection after login
-
-  if (redirect) {
-    return (
-      <HashRouter>
-        <Switch>
-          <Redirect to="/#/dashboard" />
-          <Route path="/#/dashboard" component={Full} />
-        </Switch>
-      </HashRouter>
-    );
-  } else {
-    return form;
-  }
 };
 
 export default Register;

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Redirect, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { Redirect, Link } from "react-router-dom";
 // TODO: add form validation
 // import useForm from "react-hook-form";
 
@@ -17,7 +17,6 @@ import {
 } from "reactstrap";
 import axios from "axios";
 import config from "../../../config/";
-import Full from "../../../containers/Full";
 import Modal from "../../../components/Modal";
 
 const Login: React.FC = () => {
@@ -32,7 +31,7 @@ const Login: React.FC = () => {
     isLoggedIn: false
   });
 
-  const [redirect, setRedirect] = useState(false);
+  const [isSubmitted, setSubmitted] = useState(false);
   const [modal, setModal] = useState({
     isOpen: false,
     title: "",
@@ -43,25 +42,25 @@ const Login: React.FC = () => {
 
   const toggleHandler = () => setModal({ ...modal, isOpen: !modal.isOpen });
 
-  // TODO: finish login handler
   const loginHandler = async () => {
     try {
-      const response = await axios.post(
-        `${config.BACKEND_HOST_URL}/api/v1/auth/login`,
-        login,
-        {
-          headers: { "Content-Type": "application/json" }
-        }
-      );
-      const { token, expiresIn } = response.data;
-      setUser({
-        token,
-        expiresIn,
-        isLoggedIn: true
-      });
-      setRedirect(true);
+      if (!isSubmitted) {
+        const response = await axios.post(
+          `${config.BACKEND_HOST_URL}/api/v1/auth/login`,
+          login,
+          {
+            headers: { "Content-Type": "application/json" }
+          }
+        );
+        const { token, expiresIn } = response.data;
+        setUser({
+          token,
+          expiresIn,
+          isLoggedIn: true
+        });
+        setSubmitted(true);
+      }
     } catch (error) {
-      console.log(error);
       setModal({
         isOpen: true,
         title: "Error Message",
@@ -76,18 +75,16 @@ const Login: React.FC = () => {
     setLogin({ ...login, [name]: value });
   };
 
-  if (redirect && user.isLoggedIn) {
-    return (
-      <Switch>
-        <Route path="/dashboard" component={Full} />
-        <Redirect to="/dashboard" />
-      </Switch>
-    );
+  let redirect: any;
+
+  if (isSubmitted) {
+    redirect = <Redirect to="/dashboard" />;
   }
 
   return (
     // <Form onSubmit={handleSubmit(loginHandler)}>
     <Form onSubmit={loginHandler}>
+      {redirect}
       <div className="app flex-row align-items-center">
         <Container>
           <Row className="justify-content-center">
@@ -152,9 +149,11 @@ const Login: React.FC = () => {
                     <div>
                       <h2>Regístrate</h2>
                       <p>Crea una cuenta para poder ingresar al sistema</p>
-                      <Button color="primary" className="mt-3" active>
-                        Registrarse
-                      </Button>
+                      <Link to="/register">
+                        <Button color="primary" className="mt-3" active>
+                          Registrarse
+                        </Button>
+                      </Link>
                     </div>
                   </CardBody>
                 </Card>

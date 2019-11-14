@@ -4,10 +4,14 @@ import {
   NavbarBrand,
   NavbarToggler,
   NavItem,
-  NavLink,
+  NavLink as RsNavlink,
   Badge
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 import HeaderDropdown from "./HeaderDropdown";
+
+// TODO: the RsNavlink component should be replaced with NavLink
+// this to improve performance while accessing routes
 
 const Header: React.FC = () => {
   const sidebarToggle = (
@@ -39,34 +43,49 @@ const Header: React.FC = () => {
         <span className="navbar-toggler-icon" />
       </NavbarToggler>
       <Nav className="d-md-down-none" navbar>
+        {/* TODO: These items use react-router-dom navlinks
+        Should make it iterative for different routes and componentes */}
         <NavItem className="px-3">
-          <NavLink href="#">Dashboard</NavLink>
+          <NavLink
+            to="/dashboard"
+            exact
+            activeStyle={{ textDecoration: "underline", color: "#536c79" }}
+          >
+            Dashboard
+          </NavLink>
         </NavItem>
         <NavItem className="px-3">
-          <NavLink href="#">Users</NavLink>
+          <NavLink
+            to="/users"
+            exact
+            activeStyle={{ textDecoration: "underline", color: "#536c79" }}
+          >
+            Usuarios
+          </NavLink>
         </NavItem>
+        {/*  */}
         <NavItem className="px-3">
-          <NavLink href="#">Settings</NavLink>
+          <RsNavlink href="#">Settings</RsNavlink>
         </NavItem>
       </Nav>
       <Nav className="ml-auto" navbar>
         <NavItem className="d-md-down-none">
-          <NavLink href="#">
+          <RsNavlink href="#">
             <i className="icon-bell" />
             <Badge pill color="danger">
               5
             </Badge>
-          </NavLink>
+          </RsNavlink>
         </NavItem>
         <NavItem className="d-md-down-none">
-          <NavLink href="#">
+          <RsNavlink href="#">
             <i className="icon-list" />
-          </NavLink>
+          </RsNavlink>
         </NavItem>
         <NavItem className="d-md-down-none">
-          <NavLink href="#">
+          <RsNavlink href="#">
             <i className="icon-location-pin" />
-          </NavLink>
+          </RsNavlink>
         </NavItem>
         <HeaderDropdown />
       </Nav>
