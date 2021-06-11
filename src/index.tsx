@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// TODO: define BrowserRouter or HashRouter
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Styles
 // Import Main styles for this application
@@ -22,7 +21,7 @@ import Page404 from "./views/Pages/Page404/";
 import Page500 from "./views/Pages/Page500/";
 
 ReactDOM.render(
-  <HashRouter>
+  <Router>
     <Switch>
       <Route exact path="/login" component={Login} />
       <Route exact path="/register" component={Register} />
@@ -30,6 +29,6 @@ ReactDOM.render(
       <Route exact path="/500" component={Page500} />
       <Route path="/" component={Full} />
     </Switch>
-  </HashRouter>,
-  document.getElementById("root")
+  </Router>,
+  document.querySelector("#root")
 );
